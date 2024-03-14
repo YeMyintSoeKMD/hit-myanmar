@@ -606,7 +606,7 @@ const courses = [
 {
   id: 1,
   title: 'Professional Fullstack Developer Class',
-  href: '#',
+  href: 'https://www.htetnandar.com',
   description:
   'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
   imageUrl:
@@ -720,5 +720,33 @@ social: [
 const mobileMenuOpen = ref(false)
 </script>
 <style scoped>
+  article::before{
+			content:'View Course';
 
+			width:100%;
+			height:100%;
+			background-color:rgb(0, 0, 0,0.7);
+			color:#fff;
+      font-size: 30px;
+      font-weight: 500;
+
+			position:absolute;
+			top:0;
+			left:0;
+
+			display:flex;
+			justify-content:center;
+			align-items:center;
+
+			transform:scale(8);
+			opacity:0;
+
+			transition:all 0.5s;
+
+		}
+
+    article:hover::before{
+			transform:scale(1);
+			opacity:1;
+		}
 </style>
