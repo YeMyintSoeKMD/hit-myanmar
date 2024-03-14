@@ -227,49 +227,37 @@
               <!-- <img src="/images/faq1.png" class="w-80"/> -->
               <img src="/images/faq.png" class="w-96"/>
             </div>
+
             <div>
-              <div class="collapse bg-white border border-info rounded-lg mb-3">
-                <input type="checkbox" /> 
-                <div class="collapse-title text-base font-medium">
-                  What programs does HIT offer?
-                </div>
-                <div class="collapse-content"> 
-                  <p>hello</p>
-                </div>
+              <div class="collapse collapse-plus bg-white border border-info rounded-lg mb-3">
+                  <input type="radio" name="my-accordion-3" checked="checked" /> 
+                  <div class="collapse-title text-base font-medium">
+                    Click to open this one and close others
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>hello</p>
+                  </div>
               </div>
 
-              <div class="collapse bg-white border border-info rounded-lg mb-3">
-                <input type="checkbox" /> 
-                <div class="collapse-title text-base font-medium">
-                  What programs does HIT offer?
-                </div>
-                <div class="collapse-content"> 
-                  <p>hello</p>
-                </div>
+              <div class="collapse collapse-plus bg-white border border-info rounded-lg mb-3">
+                  <input type="radio" name="my-accordion-3" /> 
+                  <div class="collapse-title text-base font-medium">
+                    Click to open this one and close others
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>hello</p>
+                  </div>
               </div>
-
-              <div class="collapse bg-white border border-info rounded-lg mb-3">
-                <input type="checkbox" /> 
-                <div class="collapse-title text-base font-medium">
-                  What programs does HIT offer?
-                </div>
-                <div class="collapse-content"> 
-                  <p>hello</p>
-                </div>
-              </div>
-
-              <div class="collapse bg-white border border-info rounded-lg mb-3">
-                <input type="checkbox" /> 
-                <div class="collapse-title text-base font-medium">
-                  What programs does HIT offer?
-                </div>
-                <div class="collapse-content"> 
-                  <p>hello</p>
-                </div>
+              <div class="collapse collapse-plus bg-white border border-info rounded-lg mb-3">
+                  <input type="radio" name="my-accordion-3" /> 
+                  <div class="collapse-title text-base font-medium">
+                    Click to open this one and close others
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>hello</p>
+                  </div>
               </div>
             </div>
-
-            
           </div>
         </div>
       </div>
@@ -281,130 +269,128 @@
           <p class="mt-6 text-lg leading-8 text-gray-600">Our Student's Reviews</p>
         </div>
         <div class="relative mt-16 grid grid-cols-1 text-center">
-          <div class="mx-auto carousel rounded-box w-full md:w-11/12">
-            <div class="carousel-item w-full md:w-1/2">
-              <div class="px-0 md:px-10">
-                <img src="/images/quote.png" class="w-10 h-10"/>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
-                </p>
-                <div class="flex flex-col items-end mt-6">
-                  <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
-                </div>
-              </div>
-            </div> 
-            <div class="carousel-item w-full md:w-1/2">
-              <div class="px-0 md:px-10">
-                <img src="/images/quote.png" class="w-10 h-10"/>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
-                </p>
-                <div class="flex flex-col items-end mt-6">
-                  <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
-                </div>
-              </div>
-            </div> 
-            <div class="carousel-item w-full md:w-1/2">
-              <div class="px-0 md:px-10">
-                <img src="/images/quote.png" class="w-10 h-10"/>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
-                </p>
-                <div class="flex flex-col items-end mt-6">
-                  <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
-                </div>
-              </div>
-            </div> 
-            <div class="carousel-item w-full md:w-1/2">
-              <div class="px-0 md:px-10">
-                <img src="/images/quote.png" class="w-10 h-10"/>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.                </p>
-                <div class="flex flex-col items-end mt-6">
-                  <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
-                </div>
-              </div>
-            </div> 
-            <div class="carousel-item w-full md:w-1/2">
-              <div class="px-0 md:px-10">
-                <img src="/images/quote.png" class="w-10 h-10"/>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.                </p>
-                <div class="flex flex-col items-end mt-6">
-                  <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
-                </div>
-              </div>
-            </div> 
-            <div class="carousel-item w-full md:w-1/2">
-              <div class="px-0 md:px-10">
-                <img src="/images/quote.png" class="w-10 h-10"/>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.                </p>
-                <div class="flex flex-col items-end mt-6">
-                  <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
-                </div>
-              </div>
-            </div> 
-            <div class="carousel-item w-full md:w-1/2">
-              <div class="px-0 md:px-10">
-                <img src="/images/quote.png" class="w-10 h-10"/>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
-                  placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.                </p>
-                <div class="flex flex-col items-end mt-6">
-                  <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
-                </div>
-              </div>
-            </div>
-          </div>
+          <swiper
+    :spaceBetween="30"
+    :hashNavigation="{
+      watchState: true,
+    }"
+   
+    :navigation="true"
+    :modules="modules"
+    class="mySwiper w-full h-full"
+    :slides-per-view="slidesPerView"
+  >
+    <swiper-slide data-hash="slide1">
+      <div class="px-0 md:px-16">
+        <img src="/images/quote.png" class="w-10 h-10"/>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+        </p>
+        <div class="flex flex-col items-end mt-6">
+          <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide data-hash="slide2">
+      <div class="px-0 md:px-16">
+        <img src="/images/quote.png" class="w-10 h-10"/>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+        </p>
+        <div class="flex flex-col items-end mt-6">
+          <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide data-hash="slide3">
+      <div class="px-0 md:px-16">
+        <img src="/images/quote.png" class="w-10 h-10"/>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+        </p>
+        <div class="flex flex-col items-end mt-6">
+          <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide data-hash="slide4">
+      <div class="px-0 md:px-16">
+        <img src="/images/quote.png" class="w-10 h-10"/>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+        </p>
+        <div class="flex flex-col items-end mt-6">
+          <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide data-hash="slide5">
+      <div class="px-0 md:px-16">
+        <img src="/images/quote.png" class="w-10 h-10"/>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+        </p>
+        <div class="flex flex-col items-end mt-6">
+          <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide data-hash="slide6">
+      <div class="px-0 md:px-16">
+        <img src="/images/quote.png" class="w-10 h-10"/>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Corporis aliquid pariatur, similique in natus dolor ipsum dolores quas
+          placeat iusto repellat velit assumenda iste cumque modi omnis! Quod, dolor dolore.
+        </p>
+        <div class="flex flex-col items-end mt-6">
+          <img src="/images/student.jpg" class="w-16 h-16 rounded-full object-cover" />
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper>
 
           <div class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-80 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
-          <svg class="h-[40rem] w-[80rem] flex-none stroke-gray-200" aria-hidden="true">
-            <defs>
-              <pattern id="e9033f3e-f665-41a6-84ef-756f6778e6fe" width="200" height="200" x="50%" y="50%" patternUnits="userSpaceOnUse" patternTransform="translate(-100 0)">
-                <path d="M.5 200V.5H200" fill="none" />
-              </pattern>
-            </defs>
-            <svg x="50%" y="50%" class="overflow-visible fill-gray-50">
-              <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0" />
+            <svg class="h-[40rem] w-[80rem] flex-none stroke-gray-200" aria-hidden="true">
+              <defs>
+                <pattern id="e9033f3e-f665-41a6-84ef-756f6778e6fe" width="200" height="200" x="50%" y="50%" patternUnits="userSpaceOnUse" patternTransform="translate(-100 0)">
+                  <path d="M.5 200V.5H200" fill="none" />
+                </pattern>
+              </defs>
+              <svg x="50%" y="50%" class="overflow-visible fill-gray-50">
+                <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0" />
+              </svg>
+              <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)" />
             </svg>
-            <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)" />
-          </svg>
-        </div>
+          </div>
         </div>
         
       </div>
@@ -484,30 +470,30 @@
     <div class="pb-8">
       <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
         <div class="sm:col-span-3">
-          <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+          <label for="first-name" class="block leading-6 text-gray-900">First name</label>
           <div class="mt-2">
-            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-500 sm:text-sm sm:leading-6">
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-2.5 ps-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-500 sm:leading-6">
           </div>
         </div>
 
         <div class="sm:col-span-3">
-          <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+          <label for="last-name" class="block leading-6 text-gray-900">Last name</label>
           <div class="mt-2">
-            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-500 sm:text-sm sm:leading-6">
+            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-2.5 ps-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-500 sm:leading-6">
           </div>
         </div>
 
         <div class="sm:col-span-6">
-          <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+          <label for="email" class="block leading-6 text-gray-900">Email address</label>
           <div class="mt-2">
-            <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-500 sm:text-sm sm:leading-6">
+            <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-2.5 ps-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-500 sm:leading-6">
           </div>
         </div>
 
         <div class="col-span-full">
-          <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Message</label>
+          <label for="about" class="block leading-6 text-gray-900">Message</label>
           <div class="mt-2">
-            <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-500 sm:text-sm sm:leading-6"></textarea>
+            <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-2.5 ps-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-500 sm:leading-6"></textarea>
           </div>
         </div>
       </div>
@@ -515,7 +501,7 @@
   </div>
 
   <div class="mt-6 flex items-center justify-end gap-x-6">
-    <button type="submit" class="rounded-md bg-cyan-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-cyan-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500">Send Message</button>
+    <button type="submit" class="rounded-md bg-cyan-500 px-3 py-2 font-semibold text-white shadow-sm hover:bg-cyan-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500">Send Message</button>
   </div>
 </form>
           </div>
@@ -544,12 +530,25 @@
 </template>
 
 <script setup>
+
 import { defineComponent, h, ref } from 'vue'
 // import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
-
 // import {Link, useForm } from '@/Composables/modules.js'
 // import { post } from '@/Composables/httpMethods.js'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
+
+const modules = [Pagination, Navigation];
+
+let slidesPerView = window.innerWidth <= 760 ? 1 : 2;
+
+window.addEventListener('resize', () => {
+  slidesPerView = window.innerWidth <= 760 ? 1 : 2;
+});
 
 const navigation = [
 { name: 'Product', href: '#' },
@@ -719,12 +718,7 @@ social: [
 }
 
 const mobileMenuOpen = ref(false)
-
-
-
-
-
-
-
-
 </script>
+<style scoped>
+
+</style>
