@@ -184,6 +184,8 @@
                 {{ course.title }}
               </a>
             </h3>
+            <span class="button-line2">
+            <span class="button-line"></span></span>
           </article>
         </div>
       </div>
@@ -727,7 +729,7 @@ const mobileMenuOpen = ref(false)
 			height:100%;
 			background-color:rgb(0, 0, 0,0.7);
 			color:#fff;
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 500;
 
 			position:absolute;
@@ -738,15 +740,106 @@ const mobileMenuOpen = ref(false)
 			justify-content:center;
 			align-items:center;
 
-			transform:scale(8);
+			transform:scale(5);
 			opacity:0;
 
 			transition:all 0.5s;
 
 		}
 
+    .button-line::before{
+			content:'';
+
+			width:1px;
+			height:52px;
+			background-color:#fff;
+
+			position:absolute;
+			top:100%;
+      left:100px;
+
+			transition:all 0.5s;
+		}
+
+		.button-line::after{
+			content:'';
+
+			width:1px;
+			height:52px;
+			background-color:#fff;
+
+			position:absolute;
+			bottom:100%;
+      right:100px;
+
+			transition:all 0.5s;
+		}
+
+    .button-line2::before{
+			content:'';
+
+			width:183px;
+			height:1px;
+			background-color:#fff;
+
+			position:absolute;
+      top:180px;
+			left:-100%;
+
+			transition:all 0.5s;
+		}
+
+		.button-line2::after{
+			content:'';
+
+			width:183px;
+			height:1px;
+			background-color:#fff;
+
+			position:absolute;
+			bottom:180px;
+			right:-100%;
+
+			transition:all 0.5s;
+		}
+
+
     article:hover::before{
 			transform:scale(1);
 			opacity:1;
 		}
+
+    article:hover .button-line::before{
+			top:50%;
+      left:100px;
+      transform: translateY(-50%);
+
+      transition-delay:0.5s;
+		}
+
+		article:hover .button-line::after{
+			bottom:50%;
+      right:100px;
+      transform: translateY(50%);
+
+      transition-delay:0.5s;
+		}
+
+    article:hover .button-line2::before{
+			left:50%;
+      top:180px;
+      transform: translateX(-50%);
+
+      transition-delay:0.5s;
+		}
+
+		article:hover .button-line2::after{
+			right:50%;
+      bottom:180px;
+      transform: translateX(50%);
+
+      transition-delay:0.5s;
+		}
+
+
 </style>
