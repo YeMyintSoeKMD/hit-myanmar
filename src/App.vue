@@ -740,7 +740,7 @@ const mobileMenuOpen = ref(false)
 			justify-content:center;
 			align-items:center;
 
-			transform:scale(5);
+			transform:scale(2);
 			opacity:0;
 
 			transition:all 0.5s;
@@ -755,8 +755,10 @@ const mobileMenuOpen = ref(false)
 			background-color:#fff;
 
 			position:absolute;
-			top:100%;
+			top:30%;
       left:100px;
+
+      opacity:0;
 
 			transition:all 0.5s;
 		}
@@ -769,8 +771,10 @@ const mobileMenuOpen = ref(false)
 			background-color:#fff;
 
 			position:absolute;
-			bottom:100%;
+			bottom:30%;
       right:100px;
+
+      opacity: 0;
 
 			transition:all 0.5s;
 		}
@@ -784,7 +788,9 @@ const mobileMenuOpen = ref(false)
 
 			position:absolute;
       top:180px;
-			left:-100%;
+			left:-30%;
+
+      opacity: 0;
 
 			transition:all 0.5s;
 		}
@@ -798,7 +804,9 @@ const mobileMenuOpen = ref(false)
 
 			position:absolute;
 			bottom:180px;
-			right:-100%;
+			right:-30%;
+
+      opacity: 0;
 
 			transition:all 0.5s;
 		}
@@ -812,6 +820,8 @@ const mobileMenuOpen = ref(false)
     article:hover .button-line::before{
 			top:50%;
       left:100px;
+
+      opacity:1;
       transform: translateY(-50%);
 
       transition-delay:0.5s;
@@ -820,6 +830,8 @@ const mobileMenuOpen = ref(false)
 		article:hover .button-line::after{
 			bottom:50%;
       right:100px;
+
+      opacity: 1;
       transform: translateY(50%);
 
       transition-delay:0.5s;
@@ -828,6 +840,8 @@ const mobileMenuOpen = ref(false)
     article:hover .button-line2::before{
 			left:50%;
       top:180px;
+
+      opacity: 1;
       transform: translateX(-50%);
 
       transition-delay:0.5s;
@@ -836,6 +850,8 @@ const mobileMenuOpen = ref(false)
 		article:hover .button-line2::after{
 			right:50%;
       bottom:180px;
+
+      opacity: 1;
       transform: translateX(50%);
 
       transition-delay:0.5s;
