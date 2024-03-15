@@ -25,7 +25,11 @@
             
             <!-- <span class="button-line2">
             <span class="button-line"></span></span> -->
-            <router-link :to="{name:'coursedetail'}"><button class="articlebutton">Course Detail<span></span></button></router-link>
+            <div class="w-full h-full flex items-center justify-center absolute top-0 left-0">
+                <router-link :to="{name:'coursedetail'}">
+                    <button class="articlebutton opacity-0">Course Detail<span></span></button>
+                </router-link>
+            </div>
           </article>
         </div>
     </div>
