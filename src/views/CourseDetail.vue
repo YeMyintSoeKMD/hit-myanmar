@@ -1,6 +1,6 @@
 <template>
  
-  <div class="container mx-auto px-6">
+  <div class="container mx-auto px-7 2xl:px-40">
     
     <div class="grid grid-cols-1 lg:grid-cols-3  pt-32">
       <div class="col-span-2 lg:pe-6">
