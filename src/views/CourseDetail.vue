@@ -1,8 +1,8 @@
 <template>
  
-  <div class="container mx-auto px-7 2xl:px-40">
+  <div class="container mx-auto px-7 2xl:px-40 pt-32">
     
-    <div class="grid grid-cols-1 lg:grid-cols-3  pt-32">
+    <div class="grid grid-cols-1 lg:grid-cols-3">
       <div class="col-span-2 lg:pe-6">
         <img src="/images/course1.jpg" class="w-full object-cover rounded-md shadow-lg"/>
         <h1 class="font-bold text-3xl my-5">Professional Fullstack Developer Class</h1>
@@ -147,7 +147,6 @@ This is the most comprehensive, yet straight-forward, course for the Python prog
       </div>
     </div>
 
-    
     <!-- Featured review -->
     <div class="mt-14 border border-info p-5 rounded-md">
       <h1 class="font-bold text-3xl mb-6">Featured Review</h1>
