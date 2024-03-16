@@ -5,8 +5,8 @@
     <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
   </div>
 
-  <div class="mt-10 sm:mx-auto shadow-md p-14 bg-white rounded-md w-2/5">
-    <form class="space-y-6 w-full" action="#" method="POST">
+  <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-max shadow-md p-4 sm:p-14 bg-white rounded-md">
+    <form class="space-y-6" action="#" method="POST">
       <div>
         <label for="email" class="block font-medium leading-6 text-gray-900">Email</label>
         <div class="mt-2">
@@ -34,7 +34,7 @@
       </div>
 
       <div>
-        <button type="submit" class="btn btn-info w-full min-h-10 h-10 rounded-md text-white font-medium text-base">Sign in</button>
+        <button type="submit" class="btn btn-info w-full min-h-10 h-10 rounded-md text-white font-medium text-base">Sign In</button>
       </div>
     </form>
 
@@ -42,16 +42,16 @@
         <div class="divider font-medium">Or continue with</div>
     </div>
 
-    <div class="flex justify-between">
-        <div class="flex border px-12 py-2 rounded-md">
+    <div class="flex flex-wrap justify-between">
+        <button class="btn bg-white flex border w-full sm:max-w-max sm:px-12 py-2 rounded-md me-0 sm:me-3 mb-3 sm:mb-0 ">
             <img src="/images/google.png" class="w-6 h-6 me-4" />
             <p class="font-medium">Google</p>
-        </div>
+        </button>
 
-        <div class="flex border px-12 py-2 rounded-md">
+        <button class="btn bg-white flex border w-full sm:max-w-max sm:px-12 sm:py-2 rounded-md">
             <img src="/images/github2.png" class="w-6 h-6 me-4" />
-            <p class="font-medium">Google</p>
-        </div>
+            <p class="font-medium">Github</p>
+        </button>
     </div>
   </div>
 
