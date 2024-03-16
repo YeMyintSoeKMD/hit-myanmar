@@ -19,7 +19,7 @@
           <router-link v-for="item in navigation" :key="item.name" :to="{name:item.href}" class="text-sm font-semibold leading-6 text-gray-900">{{ item.name }}</router-link>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+          <router-link :to="{name:'login'}" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></router-link>
         </div>
       </nav>
       <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -38,17 +38,21 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
-                <a v-for="item in navigation" :key="item.name" :href="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{ item.name }}</a>
+                <router-link v-for="item in navigation" :key="item.name" :to="{name:item.href}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{ item.name }}</router-link>
               </div>
               <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                <router-link :to="{name:'login'}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</router-link>
               </div>
             </div>
           </div>
         </DialogPanel>
       </Dialog>
     </header>
-    <router-view/>
+    <router-view v-slot="{Component}">
+      <transition name="route" mode="out-in">
+        <component :is="Component"></component>
+      </transition>
+    </router-view>
     <!-- Footer -->
     <footer class="mx-auto mt-32 max-w-7xl overflow-hidden px-6 pb-20 sm:pb-24 lg:px-8">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
@@ -165,6 +169,22 @@ const mobileMenuOpen = ref(false)
 </script>
 <style scoped>
   
+.route-enter-from{
+  opacity: 0;
+  transform: translateY(100px);
+}
 
+.route-enter-active{
+  transition: all 0.3s ease-out;
+}
+
+.route-leave-active{
+  transition: all 0.3s ease-in;
+}
+
+.route-leave-to{
+  opacity: 0;
+  transform: translateX(-100px);
+}
 
 </style>
