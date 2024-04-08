@@ -1,6 +1,6 @@
 <template>
     <div class="container mx-auto px-7 2xl:px-40 pt-32">
-        <div class="xl:h-4/5 flex items-center justify-center">
+        <div class="">
             <div class="grid lg:grid-cols-2">
 
                 <div class="lg:pe-20">
