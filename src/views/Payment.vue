@@ -1,9 +1,9 @@
 <template>
     <div class="container mx-auto px-7 2xl:px-40 pt-32">
-        <div class="xl:h-screen flex items-center justify-center">
+        <div class="xl:h-4/5 flex items-center justify-center">
             <div class="grid lg:grid-cols-2">
 
-                <div class="pe-20">
+                <div class="lg:pe-20">
                     <router-link :to="{ name: 'coursedetail' }">
                         <div class="flex items-center cursor-pointer">
                             <img src="/images/back-arrow.png" class="w-5" />
