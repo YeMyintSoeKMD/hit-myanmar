@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <!-- Header -->
-    <header v-if="showHeader" class="absolute inset-x-0 top-0 z-50">
+    <header class="absolute inset-x-0 top-0 z-50">
       <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <router-link :to="{ name: 'home' }" class="-m-1.5 p-1.5">
@@ -45,7 +45,7 @@
               <div class="space-y-2 py-6">
                 <router-link v-for="item in navigation" :key="item.name" :to="{ name: item.href }"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{
-      item.name }}</router-link>
+            item.name }}</router-link>
               </div>
               <div class="py-6">
                 <router-link :to="{ name: 'login' }"
@@ -63,7 +63,7 @@
       </transition>
     </router-view>
     <!-- Footer -->
-    <footer v-if="showFooter" class="mx-auto mt-32 max-w-7xl overflow-hidden px-6 pb-20 sm:pb-24 lg:px-8">
+    <footer class="mx-auto mt-32 max-w-7xl overflow-hidden px-6 pb-20 sm:pb-24 lg:px-8">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
         <div v-for="item in footerNavigation.main" :key="item.name" class="pb-6">
           <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
@@ -178,26 +178,26 @@ const footerNavigation = {
 
 const mobileMenuOpen = ref(false)
 
-const showHeader = ref(true);
-const showFooter = ref(true);
+// const showHeader = ref(true);
+// const showFooter = ref(true);
 
-const router = useRouter();
+// const router = useRouter();
 
-router.beforeEach((to, from, next) => {
-  // Check if the current route is "payment"
-  if (to.name === 'payment') {
-    // Hide header and footer for payment route
-    showHeader.value = false;
-    showFooter.value = false;
-    // console.log(showHeader);
-  } else {
-    // Show header and footer for other routes
-    showHeader.value = true;
-    showFooter.value = true;
-    // console.log(showHeader);
-  }
-  next();
-});
+// router.beforeEach((to, from, next) => {
+//   // Check if the current route is "payment"
+//   if (to.name === 'payment') {
+//     // Hide header and footer for payment route
+//     showHeader.value = false;
+//     showFooter.value = false;
+//     // console.log(showHeader);
+//   } else {
+//     // Show header and footer for other routes
+//     showHeader.value = true;
+//     showFooter.value = true;
+//     // console.log(showHeader);
+//   }
+//   next();
+// });
 
 </script>
 <style scoped>
