@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <div class="grid lg:grid-cols-2 pt-32">
+    <div class="h-screen flex items-center justify-center">
+
+        <div class="grid lg:grid-cols-2 pt-60">
             <div>
                 <div class="container mx-auto lg:px-16 px-5">
                     <router-link :to="{ name: 'coursedetail' }">
@@ -76,7 +77,8 @@
                                     class="md:w-64 w-full max-w-xl rounded-md bg-white px-3 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2">
                                     <div class="flex flex-col gap-1">
                                         <div class="card card-side bg-base-100">
-                                            <figure><img src="/images/wavepay.png" alt="Movie" class="w-16" /></figure>
+                                            <figure><img src="/images/wavepay.png" alt="Movie" class="w-16" />
+                                            </figure>
                                             <div class="card-body p-5 gap-0">
                                                 <h2 class="card-title">Ye Myint Soe</h2>
                                                 <p>(09403438913)</p>
@@ -91,7 +93,8 @@
                                     class="md:w-64 w-full max-w-xl rounded-md bg-white px-3 text-gray-600 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2">
                                     <div class="flex flex-col gap-1">
                                         <div class="card card-side bg-base-100">
-                                            <figure><img src="/images/ayapay.png" alt="Movie" class="w-16" /></figure>
+                                            <figure><img src="/images/ayapay.png" alt="Movie" class="w-16" />
+                                            </figure>
                                             <div class="card-body p-5 gap-0">
                                                 <h2 class="card-title">Ye Myint Soe</h2>
                                                 <p>(09403438913)</p>
@@ -111,6 +114,7 @@
 
             </div>
         </div>
+
     </div>
 </template>
 
