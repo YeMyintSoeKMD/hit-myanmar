@@ -2,7 +2,7 @@
     <div>
         <div class="grid lg:grid-cols-3">
             <div class="bg-info">
-                <div class="container mx-auto px-16 py-8 text-white">
+                <div class="container mx-auto lg:px-16 px-5 py-8 text-white">
                     <div class="flex cursor-pointer">
                         <img src="/images/back-arrow.png" class="w-6" />
                         <p class="font-medium ms-2">
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="lg:col-span-2">
-                <div class="container mx-auto px-16 py-8">
+                <div class="container mx-auto lg:px-16 px-5 py-8">
                     <p class="font-semibold text-xl">‌ငွေလွှဲပြေစာ ထည့်ရန်</p>
 
                     <div class="mt-10">
