@@ -26,7 +26,7 @@
             <div>
                 <div class="join join-vertical w-full">
                     <div class="collapse collapse-arrow join-item border border-base-300">
-                        <input type="radio" name="my-accordion-4" checked="checked" />
+                        <input type="checkbox" checked="checked" />
                         <div class="collapse-title text-md font-bold">
                             Introduction to HTML
                         </div>
@@ -63,7 +63,7 @@
                         </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border border-base-300">
-                        <input type="radio" name="my-accordion-4" />
+                        <input type="checkbox" />
                         <div class="collapse-title text-md font-bold">
                             Introduction to HTML
                         </div>
@@ -81,11 +81,26 @@
                             <div class="flex items-center mb-4">
                                 <img src="/images/circle.png" class="w-5" />
                                 <p class="text-sm ms-2">03 - HTML Attributes</p>
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <img src="/images/circle.png" class="w-5" />
+                                <p class="text-sm ms-2">04 - HTML Attributes</p>
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <img src="/images/circle.png" class="w-5" />
+                                <p class="text-sm ms-2">05 - HTML Attributes</p>
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <img src="/images/circle.png" class="w-5" />
+                                <p class="text-sm ms-2">06 - HTML Attributes</p>
                             </div>
                         </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border border-base-300">
-                        <input type="radio" name="my-accordion-4" />
+                        <input type="checkbox" />
                         <div class="collapse-title text-md font-bold">
                             Introduction to HTML
                         </div>
@@ -103,6 +118,58 @@
                             <div class="flex items-center mb-4">
                                 <img src="/images/circle.png" class="w-5" />
                                 <p class="text-sm ms-2">03 - HTML Attributes</p>
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <img src="/images/circle.png" class="w-5" />
+                                <p class="text-sm ms-2">04 - HTML Attributes</p>
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <img src="/images/circle.png" class="w-5" />
+                                <p class="text-sm ms-2">05 - HTML Attributes</p>
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <img src="/images/circle.png" class="w-5" />
+                                <p class="text-sm ms-2">06 - HTML Attributes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-md font-bold">
+                            Introduction to HTML
+                        </div>
+                        <div class="collapse-content font-medium">
+                            <div class="flex items-center mb-4">
+                                <img src="/images/right.png" class="w-5" />
+                                <p class="text-sm ms-2">01 - What is HTML?</p>
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <img src="/images/circle.png" class="w-5" />
+                                <p class="text-sm ms-2">02 - HTML Elements</p>
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <img src="/images/circle.png" class="w-5" />
+                                <p class="text-sm ms-2">03 - HTML Attributes</p>
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <img src="/images/circle.png" class="w-5" />
+                                <p class="text-sm ms-2">04 - HTML Attributes</p>
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <img src="/images/circle.png" class="w-5" />
+                                <p class="text-sm ms-2">05 - HTML Attributes</p>
+                            </div>
+
+                            <div class="flex items-center mb-4">
+                                <img src="/images/circle.png" class="w-5" />
+                                <p class="text-sm ms-2">06 - HTML Attributes</p>
                             </div>
                         </div>
                     </div>
