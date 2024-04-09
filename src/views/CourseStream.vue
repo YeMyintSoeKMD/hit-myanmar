@@ -41,34 +41,59 @@
                             Introduction to HTML
                         </div>
                         <div class="collapse-content font-medium">
-                            <div class="flex items-center mb-4">
-                                <img src="/images/right.png" class="w-5" />
-                                <p class="text-sm ms-2">01 - What is HTML?</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" checked="checked"
+                                            class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">02 - HTML Elements</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">03 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">04 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">05 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">06 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
                         </div>
                     </div>
@@ -78,34 +103,59 @@
                             Introduction to HTML
                         </div>
                         <div class="collapse-content font-medium">
-                            <div class="flex items-center mb-4">
-                                <img src="/images/right.png" class="w-5" />
-                                <p class="text-sm ms-2">01 - What is HTML?</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" checked="checked"
+                                            class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">02 - HTML Elements</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">03 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">04 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">05 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">06 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
                         </div>
                     </div>
@@ -115,34 +165,59 @@
                             Introduction to HTML
                         </div>
                         <div class="collapse-content font-medium">
-                            <div class="flex items-center mb-4">
-                                <img src="/images/right.png" class="w-5" />
-                                <p class="text-sm ms-2">01 - What is HTML?</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" checked="checked"
+                                            class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">02 - HTML Elements</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">03 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">04 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">05 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">06 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
                         </div>
                     </div>
@@ -152,34 +227,59 @@
                             Introduction to HTML
                         </div>
                         <div class="collapse-content font-medium">
-                            <div class="flex items-center mb-4">
-                                <img src="/images/right.png" class="w-5" />
-                                <p class="text-sm ms-2">01 - What is HTML?</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" checked="checked"
+                                            class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">02 - HTML Elements</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">03 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">04 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">05 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center mb-4">
-                                <img src="/images/circle.png" class="w-5" />
-                                <p class="text-sm ms-2">06 - HTML Attributes</p>
+                            <div class="flex items-center">
+                                <div class="form-control">
+                                    <label class="cursor-pointer label">
+                                        <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
+                                    </label>
+                                </div>
+                                <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
                         </div>
                     </div>
