@@ -4,7 +4,7 @@
             <div class="col-span-3">
                 <div class="pe-10">
                     <video controls width="100%" class="rounded-lg">
-                        <source src="/images/video.mp4" type="video/mp4" />
+                        <source src="/images/video1.mp4" type="video/mp4" />
                     </video>
 
                     <div class="flex justify-between mt-5">
