@@ -61,38 +61,47 @@
                         aria-label="In Progress" checked />
                     <div role="tabpanel" class="tab-content p-10">
                         <div class="flex flex-wrap">
-                            <div class="basis-64 me-4">
-                                <img src="/images/course1.jpg" class="w-full rounded-2xl" />
-                                <h1 class="text-lg font-medium mt-2">Professional Fullstack Developer Class</h1>
-                                <progress class="progress w-56 h-1" value="40" max="100"></progress>
-                                <div class="flex justify-between text-sm">
-                                    <p class="font-medium">35%</p>
-                                    <p class="text-gray-500">8hr 20min / 21hr 5min</p>
-                                </div>
 
+                            <div class="basis-64 me-4 cursor-pointer mb-10">
+                                <router-link :to="{ name: 'coursestream' }">
+                                    <div>
+                                        <img src="/images/course1.jpg" class="w-full rounded-2xl" />
+                                        <h1 class="text-lg font-medium mt-2">Professional Fullstack Developer Class</h1>
+                                        <progress class="progress w-56 h-1" value="40" max="100"></progress>
+                                        <div class="flex justify-between text-sm">
+                                            <p class="font-medium">35%</p>
+                                            <p class="text-gray-500">8hr 20min / 21hr 5min</p>
+                                        </div>
+                                    </div>
+                                </router-link>
                             </div>
 
-                            <div class="basis-64 me-4">
-                                <img src="/images/course1.jpg" class="w-full rounded-2xl" />
-                                <h1 class="text-lg font-medium mt-2">Professional Fullstack Developer Class</h1>
-                                <progress class="progress w-56 h-1" value="40" max="100"></progress>
-                                <div class="flex justify-between text-sm">
-                                    <p class="font-medium">35%</p>
-                                    <p class="text-gray-500">8hr 20min / 21hr 5min</p>
-                                </div>
-
+                            <div class="basis-64 me-4 cursor-pointer mb-10">
+                                <router-link :to="{ name: 'coursestream' }">
+                                    <div>
+                                        <img src="/images/course1.jpg" class="w-full rounded-2xl" />
+                                        <h1 class="text-lg font-medium mt-2">Professional Fullstack Developer Class</h1>
+                                        <progress class="progress w-56 h-1" value="40" max="100"></progress>
+                                        <div class="flex justify-between text-sm">
+                                            <p class="font-medium">35%</p>
+                                            <p class="text-gray-500">8hr 20min / 21hr 5min</p>
+                                        </div>
+                                    </div>
+                                </router-link>
                             </div>
 
-
-                            <div class="basis-64 me-4">
-                                <img src="/images/course1.jpg" class="w-full rounded-2xl" />
-                                <h1 class="text-lg font-medium mt-2">Professional Fullstack Developer Class</h1>
-                                <progress class="progress w-56 h-1" value="40" max="100"></progress>
-                                <div class="flex justify-between text-sm">
-                                    <p class="font-medium">35%</p>
-                                    <p class="text-gray-500">8hr 20min / 21hr 5min</p>
-                                </div>
-
+                            <div class="basis-64 me-4 cursor-pointer mb-10">
+                                <router-link :to="{ name: 'coursestream' }">
+                                    <div>
+                                        <img src="/images/course1.jpg" class="w-full rounded-2xl" />
+                                        <h1 class="text-lg font-medium mt-2">Professional Fullstack Developer Class</h1>
+                                        <progress class="progress w-56 h-1" value="40" max="100"></progress>
+                                        <div class="flex justify-between text-sm">
+                                            <p class="font-medium">35%</p>
+                                            <p class="text-gray-500">8hr 20min / 21hr 5min</p>
+                                        </div>
+                                    </div>
+                                </router-link>
                             </div>
 
                         </div>
