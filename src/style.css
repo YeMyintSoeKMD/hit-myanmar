@@ -46,4 +46,8 @@
     .divider::after {
         height: 1px;
     }
+
+    .avatar:hover .menu {
+        display: block;
+    }
 }

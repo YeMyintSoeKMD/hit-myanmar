@@ -25,6 +25,22 @@
           <router-link :to="{ name: 'login' }" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
               aria-hidden="true">&rarr;</span></router-link>
         </div>
+
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div class="avatar flex flex-col items-end">
+            <div class="w-14 rounded-full">
+              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            </div>
+
+            <ul class="menu bg-base-200 w-56 p-0 [&_li>*]:rounded-none menu absolute top-16 hidden">
+              <li>
+                <router-link :to="{ name: 'profile' }">Profile</router-link>
+              </li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+
       </nav>
       <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
         <div class="fixed inset-0 z-50" />
@@ -51,7 +67,9 @@
                 <router-link :to="{ name: 'login' }"
                   class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
                   in</router-link>
+
               </div>
+
             </div>
           </div>
         </DialogPanel>
