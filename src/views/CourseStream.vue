@@ -40,8 +40,8 @@
                         <div class="collapse-title text-md font-bold">
                             Introduction to HTML
                         </div>
-                        <div class="collapse-content font-medium">
-                            <div class="flex items-center">
+                        <div class="collapse-content px-0 font-medium">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" checked="checked"
@@ -51,7 +51,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -60,7 +60,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -69,7 +69,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -78,7 +78,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -87,7 +87,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -102,8 +102,8 @@
                         <div class="collapse-title text-md font-bold">
                             Introduction to HTML
                         </div>
-                        <div class="collapse-content font-medium">
-                            <div class="flex items-center">
+                        <div class="collapse-content px-0 font-medium">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" checked="checked"
@@ -113,7 +113,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -122,7 +122,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -131,7 +131,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -140,7 +140,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -149,7 +149,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -164,8 +164,8 @@
                         <div class="collapse-title text-md font-bold">
                             Introduction to HTML
                         </div>
-                        <div class="collapse-content font-medium">
-                            <div class="flex items-center">
+                        <div class="collapse-content px-0 font-medium">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" checked="checked"
@@ -175,7 +175,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -184,7 +184,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -193,7 +193,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -202,7 +202,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -211,7 +211,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -226,8 +226,8 @@
                         <div class="collapse-title text-md font-bold">
                             Introduction to HTML
                         </div>
-                        <div class="collapse-content font-medium">
-                            <div class="flex items-center">
+                        <div class="collapse-content px-0 font-medium">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" checked="checked"
@@ -237,7 +237,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -246,7 +246,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -255,7 +255,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -264,7 +264,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
@@ -273,7 +273,7 @@
                                 <p class="text-sm ms-2"><a href="">01 - What is HTML?</a></p>
                             </div>
 
-                            <div class="flex items-center">
+                            <div class="flex items-center px-3 py-2 hover:bg-base-300">
                                 <div class="form-control">
                                     <label class="cursor-pointer label">
                                         <input type="checkbox" class="checkbox checkbox-info w-5 h-5" />
