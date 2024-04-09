@@ -113,7 +113,7 @@
         <div class="grid grid-cols-4">
             <div class="col-span-3 pe-10">
                 <div class="border rounded-md mt-5 p-5">
-                    <h1 class="text-xl font-bold">Description</h1>
+                    <h1 class="text-xl font-bold mb-2">Description</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla incidunt nostrum nam
                         laudantium
                         dolor
