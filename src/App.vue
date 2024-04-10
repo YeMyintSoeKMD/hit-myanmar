@@ -28,7 +28,7 @@
 
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <div class="avatar flex flex-col items-end">
-            <div class="w-14 rounded-full" @click="toggleMenu">
+            <div class="w-14 rounded-full cursor-pointer" @click="toggleMenu">
               <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
             </div>
 

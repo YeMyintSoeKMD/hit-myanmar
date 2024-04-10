@@ -46,7 +46,7 @@
 
             <div class="block lg:hidden">
                 <div class="avatar" @click="toggleMenu">
-                    <div class="w-14 rounded-full">
+                    <div class="w-14 rounded-full cursor-pointer">
                         <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                     </div>
 
