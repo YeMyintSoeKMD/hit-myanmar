@@ -102,9 +102,9 @@
                     </label>
                 </div>
                 <div role="tablist" class="tabs tabs-bordered mt-8">
-                    <input type="radio" name="my_tabs_1" role="tab" class="tab text-base !w-28 p-0"
+                    <input type="radio" name="my_tabs_1" role="tab" class="tab !w-max sm:text-base text-xs sm:p-8 p-3"
                         aria-label="In Progress" checked />
-                    <div role="tabpanel" class="tab-content p-10 md:pe-10 pe-0 lg:ps-10 ps-0">
+                    <div role="tabpanel" class="tab-content pt-10 md:pe-10 lg:ps-10 ps-0">
                         <div class="flex flex-wrap">
 
                             <div class="md:basis-64 md:me-4 cursor-pointer mb-10">
@@ -152,11 +152,11 @@
                         </div>
                     </div>
 
-                    <input type="radio" name="my_tabs_1" role="tab" class="tab text-base !w-28 p-0"
-                        aria-label="Completed" />
+                    <input type="radio" name="my_tabs_1" role="tab" class="tab !w-max sm:text-base text-xs sm:p-8 p-3"
+                        aria-label=" Completed" />
                     <div role="tabpanel" class="tab-content p-10">Tab content 2</div>
 
-                    <input type="radio" name="my_tabs_1" role="tab" class="tab text-base !w-28 p-0"
+                    <input type="radio" name="my_tabs_1" role="tab" class="tab !w-max sm:text-base text-xs sm:p-8 p-3"
                         aria-label="Not Started" />
                     <div role="tabpanel" class="tab-content p-10">Tab content 3</div>
                 </div>
