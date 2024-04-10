@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto px-8 2xl:px-40 pt-32">
-        <div class="grid grid-cols-5">
-            <div>
+        <div class="grid lg:grid-cols-5">
+            <div class="hidden lg:block">
                 <div class="avatar">
                     <div class="w-28 rounded-full ring-neutral-200 ring-1 ring-offset-4">
                         <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
@@ -43,10 +43,55 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="block lg:hidden">
+                <div class="avatar">
+                    <div class="w-14 rounded-full">
+                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    </div>
+
+                    <ul class="menu bg-base-200 w-56 p-0 [&_li>*]:rounded-none menu absolute top-16 hidden z-10">
+                        <li>
+                            <a class="px-2 py-4">
+                                <img src="/images/graduation.png" class="!w-6 me-1" />
+                                My Courses
+                            </a>
+                        </li>
+                        <li>
+                            <a class="px-2 py-4">
+                                <img src="/images/profile-certificate.png" class="!w-6 me-1" />
+                                Certificates
+                            </a>
+                        </li>
+                        <li>
+                            <a class="px-2 py-4">
+                                <img src="/images/profile.png" class="!w-6 me-1" />
+                                Edit Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="px-2 py-4">
+                                <img src="/images/setting.png" class="!w-6 me-1" />
+                                Setting
+                            </a>
+                        </li>
+                        <li>
+                            <a class="px-2 py-4">
+                                <img src="/images/logout.png" class="!w-6 me-1" />
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+
+            </div>
             <div class="col-span-4">
-                <div class="flex justify-between items-center">
+                <div class="md:flex justify-between items-center">
                     <h1 class="text-2xl font-bold">My Courses</h1>
-                    <label class="input input-bordered flex items-center gap-2 rounded-2xl !h-10">
+                    <label class="input input-bordered flex items-center gap-2 rounded-2xl !h-10 md:mt-0 mt-5">
                         <input type="text" class="grow" placeholder="Search my courses" />
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                             class="w-4 h-4 opacity-70">
@@ -59,10 +104,10 @@
                 <div role="tablist" class="tabs tabs-bordered mt-8">
                     <input type="radio" name="my_tabs_1" role="tab" class="tab text-base !w-28 p-0"
                         aria-label="In Progress" checked />
-                    <div role="tabpanel" class="tab-content p-10">
+                    <div role="tabpanel" class="tab-content p-10 md:pe-10 pe-0 lg:ps-10 ps-0">
                         <div class="flex flex-wrap">
 
-                            <div class="basis-64 me-4 cursor-pointer mb-10">
+                            <div class="md:basis-64 md:me-4 cursor-pointer mb-10">
                                 <router-link :to="{ name: 'coursestream' }">
                                     <div>
                                         <img src="/images/course1.jpg" class="w-full rounded-2xl" />
@@ -76,7 +121,7 @@
                                 </router-link>
                             </div>
 
-                            <div class="basis-64 me-4 cursor-pointer mb-10">
+                            <div class="md:basis-64 md:me-4 cursor-pointer mb-10">
                                 <router-link :to="{ name: 'coursestream' }">
                                     <div>
                                         <img src="/images/course1.jpg" class="w-full rounded-2xl" />
@@ -90,7 +135,7 @@
                                 </router-link>
                             </div>
 
-                            <div class="basis-64 me-4 cursor-pointer mb-10">
+                            <div class="md:basis-64 md:me-4 cursor-pointer mb-10">
                                 <router-link :to="{ name: 'coursestream' }">
                                     <div>
                                         <img src="/images/course1.jpg" class="w-full rounded-2xl" />
