@@ -28,11 +28,12 @@
 
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <div class="avatar flex flex-col items-end">
-            <div class="w-14 rounded-full">
+            <div class="w-14 rounded-full" @click="toggleMenu">
               <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
             </div>
 
-            <ul class="menu bg-base-200 w-56 p-0 [&_li>*]:rounded-none menu absolute top-16 hidden">
+            <ul class="menu bg-base-200 w-56 p-0 [&_li>*]:rounded-none menu absolute top-16"
+              :class="{ 'hidden': !menuVisible }">
               <li>
                 <router-link :to="{ name: 'profile' }">Profile</router-link>
               </li>
@@ -216,6 +217,11 @@ const mobileMenuOpen = ref(false)
 //   }
 //   next();
 // });
+
+const menuVisible = ref(false);
+const toggleMenu = () => {
+  menuVisible.value = !menuVisible.value;
+}
 
 </script>
 <style scoped>

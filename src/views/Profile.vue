@@ -45,12 +45,13 @@
             </div>
 
             <div class="block lg:hidden">
-                <div class="avatar">
+                <div class="avatar" @click="toggleMenu">
                     <div class="w-14 rounded-full">
                         <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                     </div>
 
-                    <ul class="menu bg-base-200 w-56 p-0 [&_li>*]:rounded-none menu absolute top-16 hidden z-10">
+                    <ul class="menu bg-base-200 w-56 p-0 [&_li>*]:rounded-none menu absolute top-16 z-10"
+                        :class="{ 'hidden': !menuVisible }">
                         <li>
                             <a class="px-2 py-4">
                                 <img src="/images/graduation.png" class="!w-6 me-1" />
@@ -166,7 +167,11 @@
 </template>
 
 <script setup>
-
+import { ref } from 'vue'
+const menuVisible = ref(false);
+const toggleMenu = () => {
+    menuVisible.value = !menuVisible.value;
+}
 </script>
 
 <style lang="scss" scoped></style>
