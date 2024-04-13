@@ -28,7 +28,7 @@
                     <div @click="triggerFileInput" class="cursor-pointer flex justify-center">
                         <p
                             class="w-32 py-2 px-4 rounded-md text-sm font-semibold bg-violet-50 text-violet-700 hover:bg-violet-100 mt-5">
-                            Upload Image</p>
+                            Change Image</p>
                     </div>
                 </div>
 
