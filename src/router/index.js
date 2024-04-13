@@ -8,6 +8,9 @@ import Payment from '../views/Payment.vue'
 import CourseStream from '@/views/CourseStream.vue'
 import Profile from '@/views/Profile.vue'
 import Roadmap from '@/views/Roadmap.vue'
+import ProfileCourses from '@/views/ProfileCourses.vue'
+import ProfileCertificates from '@/views/ProfileCertificates.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,7 +53,20 @@ const router = createRouter({
     {
       path: '/profile',
       name: 'profile',
-      component: Profile
+      component: Profile,
+      redirect: { name: 'profileCourses' },
+      children: [
+        {
+          path: 'courses',
+          name: 'profileCourses',
+          component: ProfileCourses
+        },
+        {
+          path: 'certificates',
+          name: 'profileCertificates',
+          component: ProfileCertificates
+        }
+      ]
     },
     {
       path: '/roadmap',
