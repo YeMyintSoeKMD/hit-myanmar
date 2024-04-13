@@ -24,10 +24,10 @@
                         </router-link>
                     </li>
                     <li class="py-2">
-                        <a class="px-2">
+                        <router-link :to="{ name: 'profileEdit' }" class="px-2">
                             <img src="/images/profile.png" class="w-6 me-1" />
                             Edit Profile
-                        </a>
+                        </router-link>
                     </li>
                     <li class="py-2">
                         <a class="px-2">
@@ -50,7 +50,7 @@
                         <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                     </div>
 
-                    <ul class="menu bg-base-200 w-56 p-0 [&_li>*]:rounded-none menu absolute top-16 z-10"
+                    <ul class="menu bg-white shadow-lg w-56 p-0 [&_li>*]:rounded-none absolute top-16 z-10"
                         :class="{ 'hidden': !menuVisible }">
                         <li>
                             <router-link :to="{ name: 'profileCourses' }" class="px-2 py-4">
@@ -65,10 +65,10 @@
                             </router-link>
                         </li>
                         <li>
-                            <a class="px-2 py-4">
+                            <router-link :to="{ name: 'profileEdit' }" class="px-2 py-4">
                                 <img src="/images/profile.png" class="!w-6 me-1" />
                                 Edit Profile
-                            </a>
+                            </router-link>
                         </li>
                         <li>
                             <a class="px-2 py-4">

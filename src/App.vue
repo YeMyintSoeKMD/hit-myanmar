@@ -32,12 +32,12 @@
               <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
             </div>
 
-            <ul class="menu bg-base-200 w-56 p-0 [&_li>*]:rounded-none menu absolute top-16"
+            <ul class="menu shadow-md bg-white w-56 p-0 [&_li>*]:rounded-none absolute top-16"
               :class="{ 'hidden': !menuVisible }">
               <li>
-                <router-link :to="{ name: 'profile' }">Profile</router-link>
+                <router-link :to="{ name: 'profile' }" class="py-4">Profile</router-link>
               </li>
-              <li><a>Logout</a></li>
+              <li><a class="py-4">Logout</a></li>
             </ul>
           </div>
         </div>

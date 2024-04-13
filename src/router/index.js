@@ -10,6 +10,7 @@ import Profile from '@/views/Profile.vue'
 import Roadmap from '@/views/Roadmap.vue'
 import ProfileCourses from '@/views/ProfileCourses.vue'
 import ProfileCertificates from '@/views/ProfileCertificates.vue'
+import ProfileEdit from '@/views/ProfileEdit.vue'
 
 
 const router = createRouter({
@@ -65,6 +66,11 @@ const router = createRouter({
           path: 'certificates',
           name: 'profileCertificates',
           component: ProfileCertificates
+        },
+        {
+          path: 'edit',
+          name: 'profileEdit',
+          component: ProfileEdit
         }
       ]
     },
