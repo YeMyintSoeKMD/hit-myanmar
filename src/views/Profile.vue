@@ -12,7 +12,7 @@
 
                 <ul class="menu w-56 rounded-box px-0 mt-5">
                     <li class="py-2">
-                        <router-link :to="{ name: 'profileCourses' }" class="px-2 font-medium">
+                        <router-link :to="{ name: 'profileCourses' }" class="px-2">
                             <img src="/images/graduation.png" class="w-6 me-1" />
                             My Courses
                         </router-link>
