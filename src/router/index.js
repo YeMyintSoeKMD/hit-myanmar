@@ -11,6 +11,7 @@ import Roadmap from '@/views/Roadmap.vue'
 import ProfileCourses from '@/views/ProfileCourses.vue'
 import ProfileCertificates from '@/views/ProfileCertificates.vue'
 import ProfileEdit from '@/views/ProfileEdit.vue'
+import ProfileMessages from '@/views/ProfileMessages.vue'
 
 
 const router = createRouter({
@@ -71,6 +72,11 @@ const router = createRouter({
           path: 'edit',
           name: 'profileEdit',
           component: ProfileEdit
+        },
+        {
+          path: 'messages',
+          name: 'profileMessages',
+          component: ProfileMessages
         }
       ]
     },
