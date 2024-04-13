@@ -27,17 +27,23 @@
         </div>
 
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <div class="avatar flex flex-col items-end">
-            <div class="w-14 rounded-full cursor-pointer" @click="toggleMenu">
+          <div class="avatar flex flex-col items-end" @click="toggleMenu">
+            <div class="w-14 rounded-full cursor-pointer">
               <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
             </div>
 
-            <ul class="menu shadow-md bg-white w-56 p-0 [&_li>*]:rounded-none absolute top-16"
+            <ul class="menu shadow-md bg-white w-56 p-0 [&_li>*]:rounded-none absolute top-16 z-10"
               :class="{ 'hidden': !menuVisible }">
               <li>
-                <router-link :to="{ name: 'profile' }" class="py-4">Profile</router-link>
+                <router-link :to="{ name: 'profile' }" class="py-4">
+                  <img src="/images/profile.png" class="!w-6 me-1" />
+                  Profile
+                </router-link>
               </li>
-              <li><a class="py-4">Logout</a></li>
+              <li><a class="py-4">
+                  <img src="/images/logout.png" class="!w-6 me-1" />
+                  Logout
+                </a></li>
             </ul>
           </div>
         </div>
@@ -104,7 +110,7 @@
 <script setup>
 
 import { Dialog, DialogPanel } from '@headlessui/vue'
-import { defineComponent, h, ref } from 'vue'
+import { defineComponent, h, onMounted, onUnmounted, ref } from 'vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 import { useRouter } from 'vue-router'
 
@@ -222,6 +228,7 @@ const menuVisible = ref(false);
 const toggleMenu = () => {
   menuVisible.value = !menuVisible.value;
 }
+
 
 </script>
 <style scoped>

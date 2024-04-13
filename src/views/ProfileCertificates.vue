@@ -4,19 +4,19 @@
 
         <div class="flex flex-wrap mt-4">
             <div class="mt-10 md:me-5 md:basis-72">
-                <a href="/images/c1.png"><img src="/images/c1.png" class="w-full" /></a>
+                <a href="/images/c1.pdf" target="_blank"><img src="/images/c1.png" class="w-full" /></a>
                 <h3 class="text-lg font-medium mt-2">Professional Fullstack Developer Class</h3>
             </div>
             <div class="mt-10 md:me-5 md:basis-72">
-                <a href="/images/c1.png"><img src="/images/c1.png" class="w-full" /></a>
+                <a href="/images/c1.pdf" target="_blank"><img src="/images/c1.png" class="w-full" /></a>
                 <h3 class="text-lg font-medium mt-2">Professional Fullstack Developer Class</h3>
             </div>
             <div class="mt-10 md:me-5 md:basis-72">
-                <a href="/images/c1.png"><img src="/images/c1.png" class="w-full" /></a>
+                <a href="/images/c1.pdf" target="_blank"><img src="/images/c1.png" class="w-full" /></a>
                 <h3 class="text-lg font-medium mt-2">Professional Fullstack Developer Class</h3>
             </div>
             <div class="mt-10 md:me-5 md:basis-72">
-                <a href="/images/c1.png"><img src="/images/c1.png" class="w-full" /></a>
+                <a href="/images/c1.pdf" target="_blank"><img src="/images/c1.png" class="w-full" /></a>
                 <h3 class="text-lg font-medium mt-2">Professional Fullstack Developer Class</h3>
             </div>
         </div>
