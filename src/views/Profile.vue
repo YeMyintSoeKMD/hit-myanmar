@@ -1,6 +1,6 @@
 <template>
     <div class="container mx-auto px-8 2xl:px-40 pt-32">
-        <div class="grid lg:grid-cols-5">
+        <div class="grid lg:grid-cols-5 grid-cols-1">
             <div class="hidden lg:block">
                 <div class="avatar">
                     <div class="w-28 rounded-full ring-neutral-200 ring-1 ring-offset-4">
@@ -44,7 +44,7 @@
                 </ul>
             </div>
 
-            <div class="block lg:hidden">
+            <div class="block lg:hidden flex items-center mb-10">
                 <div class="avatar" @click="toggleMenu">
                     <div class="w-14 rounded-full cursor-pointer">
                         <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
@@ -83,11 +83,10 @@
                             </a>
                         </li>
                     </ul>
-
-
                 </div>
-
-
+                <div>
+                    <h2 class="font-semibold text-xl mt-1 ms-2">Htet Nandar Bo</h2>
+                </div>
             </div>
 
             <router-view></router-view>

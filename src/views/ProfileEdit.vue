@@ -2,7 +2,7 @@
     <div class="col-span-4">
         <h1 class="text-2xl font-bold">Public profile</h1>
 
-        <div class="mt-16">
+        <div class="mt-14">
             <div class="flex flex-col mb-4">
                 <label class="text-lg font-medium mb-2">Full Name</label>
                 <input type="text" placeholder="Type here" class="input input-bordered w-full" value="Htet Nandar Bo" />
@@ -25,20 +25,31 @@
                         <img :src="imageUrl" class="w-60 m-auto" />
                     </div>
                     <input type="file" class="hidden" ref="fileInput" @change="handleFileSelect">
-                    <div @click="triggerFileInput" class="cursor-pointer flex justify-center">
+                    <div @click="triggerFileInput" class="w-32 cursor-pointer m-auto">
                         <p
-                            class="w-32 py-2 px-4 rounded-md text-sm font-semibold bg-violet-50 text-violet-700 hover:bg-violet-100 mt-5">
+                            class="py-2 px-4 rounded-md text-sm font-semibold bg-orange-50 text-orange-600 hover:bg-orange-100 mt-5">
                             Change Image</p>
                     </div>
                 </div>
-
             </div>
 
-            <!-- <div class="flex flex-col mb-4">
-                <label class="text-lg font-medium mb-2">Change Image</label>
-                <input type="file"
-                    class="file-input file-input-bordered w-full file:bg-white file:text-gray-700 file:border-0 file:border-r file:border-inherit hover:file:bg-violet-100" />
-            </div> -->
+            <div class="form-control">
+                <label class="cursor-pointer label justify-start">
+                    <input type="checkbox" class="checkbox checkbox-info" v-model="showPasswordFields" />
+                    <span class="label-text ms-3">Change Password</span>
+                </label>
+
+                <transition name="fade">
+                    <div v-if="showPasswordFields" class="flex flex-col mt-4">
+                        <input type="password" placeholder="Type your old password"
+                            class="input input-bordered w-full mb-4" />
+                        <input type="password" placeholder="Type your new password"
+                            class="input input-bordered w-full mb-4" />
+                        <button
+                            class="w-20 py-2 rounded-md text-sm font-semibold bg-orange-50 text-orange-600 hover:bg-orange-100 mt-5">Update</button>
+                    </div>
+                </transition>
+            </div>
 
             <div class="mt-8">
                 <button class="btn btn-info text-white text-lg px-10">Save</button>
@@ -48,7 +59,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, watchEffect } from 'vue';
 
 const fileInput = ref();
 const imageUrl = ref();
@@ -71,6 +82,35 @@ const handleFileSelect = (event) => {
         reader.readAsDataURL(selectedFile);
     }
 };
+
+const showPasswordFields = ref(false);
+
+
+watchEffect(() => {
+    if (showPasswordFields.value) {
+        showPasswordFields.value = true;
+    }
+});
+
+
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.fade-enter-from {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.fade-enter-active {
+    transition: all 0.3s;
+}
+
+.fade-leave-active {
+    transition: all 0.3s;
+}
+
+.fade-leave-to {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+</style>
