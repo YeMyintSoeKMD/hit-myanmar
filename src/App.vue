@@ -28,12 +28,13 @@
 
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <router-link :to="{ name: 'profile' }">
-            <div class="avatar flex flex-col items-end">
-              <div class="w-14 rounded-full cursor-pointer">
-                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-              </div>
+            <div class="tooltip tooltip-bottom" data-tip="Go to profile">
+              <div class="avatar flex flex-col items-end">
+                <div class="w-14 rounded-full cursor-pointer">
+                  <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                </div>
 
-              <!-- <ul class="menu shadow-md bg-white w-56 p-0 [&_li>*]:rounded-none absolute top-16 z-10"
+                <!-- <ul class="menu shadow-md bg-white w-56 p-0 [&_li>*]:rounded-none absolute top-16 z-10"
               :class="{ 'hidden': !menuVisible }">
               <li>
                 <router-link :to="{ name: 'profile' }" class="py-4">
@@ -46,6 +47,7 @@
                   Logout
                 </a></li>
             </ul> -->
+              </div>
             </div>
           </router-link>
         </div>
