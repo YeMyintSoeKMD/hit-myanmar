@@ -53,10 +53,13 @@
                     <p class="ms-1">Watch Video</p>
                   </div>
                   <dialog id="my_modal_2" class="modal">
-                    <div class="modal-box">
-                      <video controls class="rounded-lg w-full">
-                        <source src="/images/video1.mp4" type="video/mp4" />
-                      </video>
+                    <div class="modal-box p-0">
+                      <div class="w-full">
+                        <iframe class="w-full h-96" src="https://www.youtube.com/embed/tZJ1G1hO8H8?si=IF-_JC9TGLZ5nlIu"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      </div>
                     </div>
                     <form method="dialog" class="modal-backdrop">
                       <button>close</button>
