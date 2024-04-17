@@ -3,7 +3,7 @@
         <div class="grid lg:grid-cols-4">
             <div class="lg:col-span-3">
                 <div class="lg:pe-10">
-                    <video controls width="100%" class="rounded-lg">
+                    <video controls class="rounded-lg w-full">
                         <source src="/images/video1.mp4" type="video/mp4" />
                     </video>
 
