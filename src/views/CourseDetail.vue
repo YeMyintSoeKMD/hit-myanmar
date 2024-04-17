@@ -157,7 +157,7 @@
     </div>
 
     <!-- Featured review -->
-    <div class="mt-14 border border-info p-5 rounded-md">
+    <div class="mt-14">
       <h1 class="font-bold text-3xl mb-6">Featured Review</h1>
       <div class="relative mb-6">
         <textarea class="textarea textarea-info w-full text-base resize-none h-36" placeholder="Share feedback . . ."
