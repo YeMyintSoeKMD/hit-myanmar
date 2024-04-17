@@ -159,6 +159,16 @@
     <!-- Featured review -->
     <div class="mt-14 border border-info p-5 rounded-md">
       <h1 class="font-bold text-3xl mb-6">Featured Review</h1>
+      <div class="relative mb-6">
+        <textarea class="textarea textarea-info w-full text-base resize-none h-36" placeholder="Share feedback . . ."
+          style="scrollbar-width: none;"></textarea>
+        <div class="tooltip tooltip-bottom" data-tip="Send">
+          <div
+            class="absolute w-9 bottom-2 right-2 cursor-pointer rounded-full hover:bg-gray-100 transition duration-300">
+            <img src="/images/send.png" class="w-full p-2" />
+          </div>
+        </div>
+      </div>
       <div>
         <div class="flex items-center">
           <img src="/images/student.jpg" class="w-20 h-20 rounded-full object-cover me-3" />
@@ -179,18 +189,6 @@
       </div>
 
     </div>
-
-    <div class="relative">
-      <textarea class="textarea textarea-info w-full mt-14 text-base resize-none" placeholder="Share feedback . . ."
-        style="scrollbar-width: none;"></textarea>
-      <div class="tooltip tooltip-bottom" data-tip="Send">
-        <div
-          class="absolute w-9 bottom-2 right-2 cursor-pointer rounded-full hover:bg-gray-100 transition duration-300">
-          <img src="/images/send.png" class="w-full p-2" />
-        </div>
-      </div>
-    </div>
-    <!-- <button type="" class="btn btn-info text-white text-base mt-3">Send Feedback</button> -->
   </div>
 
 
