@@ -28,12 +28,27 @@
                             doloribus.
                         </p>
                     </div>
-
-
-
                 </div>
             </div>
             <div>
+                <div class="border rounded-md p-4 pb-8 mb-5">
+                    <h1 class=" font-bold">Your Progress</h1>
+                    <div class="mt-4">
+                        <div class="progress-container h-1.5 relative rounded-lg bg-gray-200"
+                            :data-percentage="percentage">
+                            <div class="progress h-1.5 relative rounded-lg bg-info w-0 transition duration-200"
+                                :style="{ width: `${percentage}%` }"></div>
+                            <div class="percentage bg-info rounded-md shadow-md text-white text-xs p-1 absolute top-4 left-0 -translate-x-1/2 w-8 text-center transition duration-200 after:bg-info after:absolute after:-top-1 after:left-1/2 after:transform after:-translate-x-1/2 after:rotate-45 after:h-2.5 after:w-2.5 after:z-[-1]"
+                                :style="{ left: `${percentage}%` }">{{
+                                percentage
+                            }}%</div>
+                        </div>
+                        <div class="flex justify-between text-xs text-gray-400 mt-1">
+                            <h2>0%</h2>
+                            <h2>100%</h2>
+                        </div>
+                    </div>
+                </div>
                 <div class="join join-vertical w-full">
                     <div class="collapse collapse-arrow join-item border border-base-300">
                         <input type="checkbox" checked="checked" />
@@ -290,6 +305,18 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
+
+const percentage = ref(70);
+function setPercentage(newPercentage) {
+    percentage.value = newPercentage;
+}
+
+onMounted(() => {
+    setPercentage(percentage.value);
+});
+
+
 
 </script>
 

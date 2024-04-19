@@ -48,21 +48,19 @@
 
                 <div class="mt-8 flex items-center">
                   <button class="btn btn-info text-white">Get Started</button>
-                  <div class="flex items-center ms-5 cursor-pointer" onclick="my_modal_2.showModal()">
+                  <div class="flex items-center ms-5 cursor-pointer" onclick="guide.showModal()">
                     <img src="/images/Play.gif" class="w-16" />
                     <p class="ms-1">Watch Video</p>
                   </div>
-                  <dialog id="my_modal_2" class="modal">
+                  <dialog ref="modal" id="guide" class="modal" @closed="closeModal">
                     <div class="modal-box p-0">
-                      <div class="w-full">
-                        <iframe class="w-full h-96" src="https://www.youtube.com/embed/tZJ1G1hO8H8?si=IF-_JC9TGLZ5nlIu"
+                        <iframe ref="videoFrame" class="w-full h-96" src="https://www.youtube.com/embed/tZJ1G1hO8H8?si=mco2tvJoJ73EFysu"
                           title="YouTube video player" frameborder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      </div>
                     </div>
                     <form method="dialog" class="modal-backdrop">
-                      <button>close</button>
+                      <button @click="closeModal">close</button>
                     </form>
                   </dialog>
                 </div>
@@ -243,8 +241,9 @@
       </div>
       <div class="relative mt-16 grid grid-cols-1 text-center">
         <swiper :spaceBetween="30" :hashNavigation="{
-                watchState: true,
-              }" :navigation="true" :modules="modules" class="mySwiper w-full h-full" :slides-per-view="slidesPerView">
+                        watchState: true,
+                      }" :navigation="true" :modules="modules" class="mySwiper w-full h-full"
+          :slides-per-view="slidesPerView">
           <swiper-slide data-hash="slide1">
             <div class="px-0 md:px-16">
               <img src="/images/quote.png" class="w-10 h-10" />
@@ -492,6 +491,7 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -545,5 +545,6 @@ const values = [
       'Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.',
   },
 ]
+
 
 </script>
