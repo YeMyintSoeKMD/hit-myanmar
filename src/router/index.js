@@ -12,7 +12,7 @@ import ProfileCourses from '@/views/ProfileCourses.vue'
 import ProfileCertificates from '@/views/ProfileCertificates.vue'
 import ProfileEdit from '@/views/ProfileEdit.vue'
 import ProfileMessages from '@/views/ProfileMessages.vue'
-
+import Blogs from '@/views/Blogs.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -84,6 +84,11 @@ const router = createRouter({
       path: '/roadmap',
       name: 'roadmap',
       component: Roadmap
+    },
+    {
+      path: '/blogs',
+      name: 'blogs',
+      component: Blogs
     }
   ]
 })

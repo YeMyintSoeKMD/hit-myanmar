@@ -121,8 +121,7 @@ import { useRouter } from 'vue-router'
 const navigation = [
   { name: 'Courses', href: 'courses' },
   { name: 'Roadmap', href: 'roadmap' },
-  { name: 'Resources', href: 'courses' },
-  { name: 'Company', href: 'courses' },
+  { name: 'Blogs', href: 'blogs' },
 ]
 
 const footerNavigation = {
