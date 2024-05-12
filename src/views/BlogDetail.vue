@@ -15,7 +15,7 @@
                     <div class="flex">
                         <img src="/images/save.png" class="w-6 ms-4 cursor-pointer" />
 
-                        <div class="dropdown cursor-pointer">
+                        <div class="dropdown dropdown-end cursor-pointer">
                             <img tabindex="0" src="/images/share.png" class="w-5 ms-4" />
 
                             <ul tabindex="0"
