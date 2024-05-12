@@ -7,14 +7,14 @@
             </div>
 
             <div class="mt-8 flex flex-col sm:flex-row sm:justify-between">
-                <select class="select select-bordered w-24 sm:w-28 md:w-56 hidden sm:block">
+                <select class="select select-bordered w-24 w-full md:w-390 md:order-1 order-2">
                     <option disabled selected>Filter</option>
                     <option>Sci-fi</option>
                     <option>Drama</option>
                     <option>Action</option>
                 </select>
 
-                <label class="input input-bordered flex items-center gap-2 w-full md:w-3/5 order-1">
+                <label class="input input-bordered flex items-center gap-2 w-full md:w-2/3 md:order-2 order-1 mb-3">
                     <input type="text" class="grow" placeholder="Search" />
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                         class="w-4 h-4 opacity-70">
@@ -24,12 +24,7 @@
                     </svg>
                 </label>
 
-                <select class="select select-bordered w-full mt-2 sm:mt-0 sm:w-28 md:w-56 order-2">
-                    <option disabled selected>Filter</option>
-                    <option>Sci-fi</option>
-                    <option>Drama</option>
-                    <option>Action</option>
-                </select>
+
             </div>
         </div>
 

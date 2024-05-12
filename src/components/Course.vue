@@ -32,7 +32,7 @@ const courses = [
     price: '190000 MMK',
     discountPrice: '100000 MMK',
     datetime: '2020-03-16',
-    tag: 'fullstack'
+    tag: 'php'
   },
   {
     id: 1,
@@ -43,7 +43,7 @@ const courses = [
     price: '190000 MMK',
     discountPrice: '100000 MMK',
     datetime: '2020-03-16',
-    tag: 'fullstack'
+    tag: 'laravel'
   }, {
     id: 1,
     title: 'Professional Fullstack Developer Class',
@@ -53,7 +53,7 @@ const courses = [
     price: '190000 MMK',
     discountPrice: '100000 MMK',
     datetime: '2020-03-16',
-    tag: 'fullstack'
+    tag: 'vue'
   }
   // More posts...
 ]
