@@ -49,15 +49,16 @@
                 <div class="mt-2">
                     <div class="flex justify-between items-center">
                         <h1 class="text-xl font-bold">Higher Order Functions in JavaScript</h1>
-                        <img src="/images/diagonal-arrow.png" class="w-4" />
+                        <router-link :to="{ name: 'blogDetail' }"><img src="/images/diagonal-arrow.png"
+                                class="w-4" /></router-link>
                     </div>
                     <p class="mt-2 leading-7">Higher Order Function တွေဆိုတာ တစ်ခြား Function တွေကို Argument အဖြစ် Pass
                         လုပ်လို့ရပြီး Array
                         တွေကို အလွယ်သကူ လိုသလို Manage လုပ်လို့ရတဲ့ ...</p>
                     <div class="mt-5">
-                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2">programming</div>
-                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2">javascript</div>
-                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2">frondend</div>
+                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2 mb-1">programming</div>
+                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2 mb-1">javascript</div>
+                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2 mb-1">frondend</div>
                     </div>
                 </div>
             </div>
@@ -102,7 +103,7 @@
                                 <p class="mt-2 text-sm leading-6">{{ item.description }}</p>
                                 <div class="mt-5">
                                     <div v-for="(tag, tagIndex) in item.tags" :key="tagIndex"
-                                        class="badge bg-sky-200 text-sky-800 py-3 me-2">{{ tag }}</div>
+                                        class="badge bg-sky-200 text-sky-800 py-3 me-2 mb-1">{{ tag }}</div>
                                 </div>
                             </div>
                             <div v-if="index !== items.length - 2" class="divider mt-2"></div>
@@ -133,7 +134,7 @@
                         အတိုင်းရေးတာ
                         များပေမယ့် ...</p>
                     <div class="mt-3">
-                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2">programming</div>
+                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2 mb-1">programming</div>
                     </div>
                 </div>
             </div>
@@ -155,7 +156,7 @@
                         အတိုင်းရေးတာ
                         များပေမယ့် ...</p>
                     <div class="mt-3">
-                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2">programming</div>
+                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2 mb-1">programming</div>
                     </div>
                 </div>
             </div>
@@ -177,7 +178,7 @@
                         အတိုင်းရေးတာ
                         များပေမယ့် ...</p>
                     <div class="mt-3">
-                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2">programming</div>
+                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2 mb-1">programming</div>
                     </div>
                 </div>
             </div>
@@ -199,7 +200,7 @@
                         အတိုင်းရေးတာ
                         များပေမယ့် ...</p>
                     <div class="mt-3">
-                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2">programming</div>
+                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2 mb-1">programming</div>
                     </div>
                 </div>
             </div>
@@ -221,7 +222,7 @@
                         အတိုင်းရေးတာ
                         များပေမယ့် ...</p>
                     <div class="mt-3">
-                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2">programming</div>
+                        <div class="badge bg-sky-200 text-sky-800 py-3 me-2 mb-1">programming</div>
                     </div>
                 </div>
             </div>
