@@ -15,24 +15,18 @@
                     <div class="flex">
                         <img src="/images/save.png" class="w-6 ms-4 cursor-pointer" />
 
-                        <div class="relative cursor-pointer" @click="toggleDropdown">
-                            <img src="/images/share.png" class="w-5 ms-4" />
-                            <div v-if="isOpen" class="absolute right-0 mt-2 w-52 bg-white rounded-lg shadow-lg z-10">
-                                <ul>
-                                    <li class="flex items-center py-2 px-4 hover:bg-gray-100">
-                                        <img src="/images/link.png" class="w-5 me-2" />
-                                        <span class="text-sm">Copy Link</span>
-                                    </li>
-                                    <li class="flex items-center py-2 px-4 hover:bg-gray-100">
-                                        <img src="/images/facebook2.png" class="w-5 me-2" />
-                                        <span class="text-sm">Share on Facebook</span>
-                                    </li>
-                                    <li class="flex items-center py-2 px-4 hover:bg-gray-100">
-                                        <img src="/images/linkedin1.png" class="w-5 me-2" />
-                                        <span class="text-sm">Share on LinkedIn</span>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="dropdown cursor-pointer">
+                            <img tabindex="0" src="/images/share.png" class="w-5 ms-4" />
+
+                            <ul tabindex="0"
+                                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a> <img src="/images/link.png" class="w-5 me-2" />
+                                        <span class="text-sm">Copy Link</span></a></li>
+                                <li><a> <img src="/images/facebook2.png" class="w-5 me-2" />
+                                        <span class="text-sm">Share on Facebook</span></a></li>
+                                <li><a> <img src="/images/linkedin1.png" class="w-5 me-2" />
+                                        <span class="text-sm">Share on LinkedIn</span></a></li>
+                            </ul>
                         </div>
 
                     </div>
@@ -210,27 +204,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
 
-const isOpen = ref(false);
-
-const toggleDropdown = () => {
-    isOpen.value = !isOpen.value;
-};
-
-const closeDropdown = (event) => {
-    if (!event.target.closest('.relative')) {
-        isOpen.value = false;
-    }
-};
-
-onMounted(() => {
-    document.addEventListener('click', closeDropdown);
-});
-
-onBeforeUnmount(() => {
-    document.removeEventListener('click', closeDropdown);
-});
 </script>
 
 <style lang="scss" scoped></style>
