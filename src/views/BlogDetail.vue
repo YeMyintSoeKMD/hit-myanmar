@@ -14,9 +14,6 @@
                 <div class="flex">
                     <img src="/images/save.png" class="w-5 me-4" />
                     <img src="/images/share.png" class="w-5 me-4" />
-                    <img src="/images/twitter.png" class="w-5 me-4" />
-                    <img src="/images/linkedin.png" class="w-5 me-4" />
-                    <img src="/images/facebook2.png" class="w-5 me-4" />
                 </div>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate sed omnis
