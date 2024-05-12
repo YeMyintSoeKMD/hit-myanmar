@@ -23,7 +23,9 @@
                 distinctio architecto
                 molestias, voluptatem amet accusamus ad dolorum minima, eligendi adipisci quas consequuntur perferendis
                 voluptas aliquid neque quam?</p>
-            <img src="/images/blog.jpg" class="rounded w-full h-120 object-cover my-10" />
+            <div class="flex justify-center">
+                <img src="/images/blog.jpg" class="rounded w-2/3 h-96 object-cover my-10" />
+            </div>
             <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos veniam alias ipsam qui
                 corporis
                 mollitia consectetur delectus temporibus animi ullam adipisci, magnam harum totam nostrum consequuntur
@@ -52,7 +54,14 @@
                 architecto facere deserunt unde non sed?</p>
 
             <div class="mt-10">
-                <h2 class="mb-5 font-medium">Comments (10)</h2>
+                <h2 class="font-medium mb-3">Leave Comment</h2>
+                <textarea placeholder="Write a comment..."
+                    class="textarea textarea-bordered textarea-md w-full"></textarea>
+                <button class="btn btn-info h-10 min-h-0 text-white mt-1">Submit</button>
+            </div>
+
+            <div class="mt-10">
+                <h2 class="mb-5 font-medium">Comments (3)</h2>
                 <div class="mb-4">
                     <div class="flex items-start">
                         <div class="avatar me-2">
@@ -112,12 +121,7 @@
                 </div>
             </div>
 
-            <div class="mt-10">
-                <h2 class="font-medium mb-3">Leave Comment</h2>
-                <textarea placeholder="Write a comment..."
-                    class="textarea textarea-bordered textarea-md w-full"></textarea>
-                <button class="btn btn-info h-10 min-h-0 text-white mt-1">Submit</button>
-            </div>
+
 
             <div class="mt-10">
                 <h1 class="font-medium mb-8 text-xl">Explore Related Posts</h1>
@@ -176,6 +180,8 @@
                     </div>
                 </div>
             </div>
+
+
 
         </div>
     </div>
