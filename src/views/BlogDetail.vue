@@ -16,13 +16,13 @@
                     <img src="/images/share.png" class="w-5 me-4" />
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate sed omnis
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate sed omnis
                 distinctio architecto
                 molestias, voluptatem amet accusamus ad dolorum minima, eligendi adipisci quas consequuntur perferendis
-                voluptas aliquid neque quam?</p>
-            <div class="flex justify-center">
-                <img src="/images/blog.jpg" class="rounded w-2/3 h-96 object-cover my-10" />
-            </div>
+                voluptas aliquid neque quam?</p> -->
+            <!-- <div class="flex justify-center"> -->
+            <img src="/images/blog.jpg" class="rounded w-2/3 h-96 object-cover my-10" />
+            <!-- </div> -->
             <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos veniam alias ipsam qui
                 corporis
                 mollitia consectetur delectus temporibus animi ullam adipisci, magnam harum totam nostrum consequuntur
