@@ -1,19 +1,14 @@
 <template>
     <div class="container mx-auto px-7 2xl:px-40 pt-32">
         <div class="flex justify-center">
-            <div class="text-center w-1/2">
+            <div class="text-center">
                 <h1 class="text-6xl font-bold mb-6">Roadmap</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo ex maxime
                     unde
                     saepe voluptate
-                    dignissimos</p>
-            </div>
-        </div>
-        <div class="flex justify-center mt-7">
-            <div class="join join-vertical lg:join-horizontal">
-                <button class="btn join-item">Frontend</button>
-                <button class="btn join-item">Backend</button>
-                <button class="btn join-item">Fullstack</button>
+                    dignissimos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quos magnam ad
+                    dolorum repellat tempore? A placeat unde esse tempore ipsa, distinctio obcaecati iste veniam,
+                    laborum sequi ipsum temporibus cumque?</p>
             </div>
         </div>
         <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-14">
