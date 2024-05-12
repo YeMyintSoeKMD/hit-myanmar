@@ -1,6 +1,22 @@
 <template>
     <div class="container mx-auto px-7 2xl:px-40 pt-32">
-        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+        <div class="flex justify-center">
+            <div class="text-center w-1/2">
+                <h1 class="text-6xl font-bold mb-6">Roadmap</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo ex maxime
+                    unde
+                    saepe voluptate
+                    dignissimos</p>
+            </div>
+        </div>
+        <div class="flex justify-center mt-7">
+            <div class="join join-vertical lg:join-horizontal">
+                <button class="btn join-item">Frontend</button>
+                <button class="btn join-item">Backend</button>
+                <button class="btn join-item">Fullstack</button>
+            </div>
+        </div>
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mt-14">
             <li>
                 <div class="timeline-middle">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
