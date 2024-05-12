@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto px-7 2xl:px-40 pt-32">
         <div class="flex justify-center">
-            <div class="w-2/3">
+            <div class="lg:w-2/3 w-full">
                 <h1 class="text-2xl font-semibold">Higher Order Functions in JavaScript</h1>
                 <div class="flex justify-between items-center mb-5">
                     <div class="flex items-center mt-5">
@@ -13,11 +13,31 @@
                                 read</span></p>
                     </div>
                     <div class="flex">
-                        <img src="/images/save.png" class="w-5 me-4" />
-                        <img src="/images/share.png" class="w-5 me-4" />
+                        <img src="/images/save.png" class="w-6 ms-4 cursor-pointer" />
+
+                        <div class="relative cursor-pointer" @click="toggleDropdown">
+                            <img src="/images/share.png" class="w-5 ms-4" />
+                            <div v-if="isOpen" class="absolute right-0 mt-2 w-52 bg-white rounded-lg shadow-lg z-10">
+                                <ul>
+                                    <li class="flex items-center py-2 px-4 hover:bg-gray-100">
+                                        <img src="/images/link.png" class="w-5 me-2" />
+                                        <span class="text-sm">Copy Link</span>
+                                    </li>
+                                    <li class="flex items-center py-2 px-4 hover:bg-gray-100">
+                                        <img src="/images/facebook2.png" class="w-5 me-2" />
+                                        <span class="text-sm">Share on Facebook</span>
+                                    </li>
+                                    <li class="flex items-center py-2 px-4 hover:bg-gray-100">
+                                        <img src="/images/linkedin1.png" class="w-5 me-2" />
+                                        <span class="text-sm">Share on LinkedIn</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <img src="/images/blog.jpg" class="rounded w-full h-96 object-cover my-10" />
+                <img src="/images/blog.jpg" class="rounded w-full md:h-96 h-64 object-cover my-10" />
                 <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos veniam alias ipsam
                     qui
                     corporis
@@ -89,8 +109,6 @@
                         </div>
                         <div class="text-sm font-medium text-gray-600 ms-16 mt-1">
                             <span class="me-4">3 min</span>
-                            <span class="me-4">Like</span>
-                            <span class="me-4">Reply</span>
                         </div>
                     </div>
                     <div class="mb-4">
@@ -108,8 +126,6 @@
                         </div>
                         <div class="text-sm font-medium text-gray-600 ms-16 mt-1">
                             <span class="me-4">3 min</span>
-                            <span class="me-4">Like</span>
-                            <span class="me-4">Reply</span>
                         </div>
                     </div>
                     <div class="mb-4">
@@ -127,15 +143,13 @@
                         </div>
                         <div class="text-sm font-medium text-gray-600 ms-16 mt-1">
                             <span class="me-4">3 min</span>
-                            <span class="me-4">Like</span>
-                            <span class="me-4">Reply</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="mt-10">
                     <h1 class="font-medium mb-8 text-xl">Explore Related Posts</h1>
-                    <div class="grid grid-cols-2 gap-x-5 gap-y-10">
+                    <div class="grid md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-10">
                         <div class="flex">
                             <img src="/images/blog1.jpg" class="w-28 rounded object-cover" />
                             <div class="ms-3">
@@ -190,16 +204,33 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
+const isOpen = ref(false);
+
+const toggleDropdown = () => {
+    isOpen.value = !isOpen.value;
+};
+
+const closeDropdown = (event) => {
+    if (!event.target.closest('.relative')) {
+        isOpen.value = false;
+    }
+};
+
+onMounted(() => {
+    document.addEventListener('click', closeDropdown);
+});
+
+onBeforeUnmount(() => {
+    document.removeEventListener('click', closeDropdown);
+});
 </script>
 
 <style lang="scss" scoped></style>
