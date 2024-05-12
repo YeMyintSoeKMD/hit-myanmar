@@ -6,15 +6,16 @@
 
 
       <div class="mt-4">
-        <h1 class="text-xl font-bold">{{ course.title }}</h1>
-        <div class="flex items-center mt-2">
-          <span class="text-xs font-medium line-through text-gray-500">{{ course.price }}</span>
-          <img src="/images/dot.png" class="w-4 mx-1" />
-          <span class="text-lg font-bold text-orange-600">{{ course.discountPrice }}</span>
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <span class="text-xs font-medium line-through text-gray-500">{{ course.price }}</span>
+            <img src="/images/dot.png" class="w-4 mx-1" />
+            <span class="text-lg font-bold text-orange-600">{{ course.discountPrice }}</span>
+          </div>
+          <router-link :to="{ name: 'courseDetail' }"><img src="/images/diagonal-arrow.png" class="w-4" /></router-link>
         </div>
-        <div class="mt-2">
-          <div class="badge bg-sky-200 text-sky-800 py-3 me-2 mb-1">{{ course.tag }}</div>
-        </div>
+        <h1 class="text-xl font-bold mt-1">{{ course.title }}</h1>
+        <div class="badge bg-sky-200 text-sky-800 py-3 me-2 mb-1 mt-2">{{ course.tag }}</div>
       </div>
     </div>
   </div>

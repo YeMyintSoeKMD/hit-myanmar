@@ -25,7 +25,7 @@ const router = createRouter({
     },
     {
       path: '/coursedetail',
-      name: 'coursedetail',
+      name: 'courseDetail',
       component: CourseDetail
     },
     {
