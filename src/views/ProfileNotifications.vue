@@ -14,21 +14,27 @@
             </div>
         </div>
 
-        <div class="flex px-10 py-4 mb-1">
+        <div class="flex ps-10 py-4 mb-1">
             <div class="w-10">
                 <div class="bg-orange-50 w-10 h-10 rounded-full flex justify-center items-center">
                     <img src="/images/notification1.png" class="w-8 h-8" />
                 </div>
             </div>
             <div class="ms-5">
-                <p class="mb-1 text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sit Lorem
-                    ipsum dolor sit
-                    amet, consectetur adipisicing elit Lorem ipsum dolor sit netur esse neque lorem...</p>
+                <div class="flex items-start">
+                    <p class="mb-1 basis-11/12 text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nam, sit Lorem
+                        ipsum dolor sit
+                        amet, consectetur adipisicing elit Lorem ipsum dolor sit netur esse neque lorem...</p>
+                    <div class="basis-1/12 flex justify-end">
+
+                    </div>
+                </div>
                 <span class="text-sm text-orange-600">1 hour ago</span>
             </div>
         </div>
 
-        <div class="flex bg-sky-10 px-10 py-4 mb-1">
+        <div class="flex bg-sky-10 ps-10 py-4 mb-1">
             <div class="w-10">
                 <div class="bg-orange-50 w-10 h-10 rounded-full flex justify-center items-center">
                     <img src="/images/notification1.png" class="w-8 h-8" />
@@ -47,7 +53,7 @@
             </div>
         </div>
 
-        <div class="flex bg-sky-10 px-10 py-4 mb-1">
+        <div class="flex bg-sky-10 ps-10 py-4 mb-1">
             <div class="w-10">
                 <div class="bg-orange-50 w-10 h-10 rounded-full flex justify-center items-center">
                     <img src="/images/notification1.png" class="w-8 h-8" />
@@ -66,7 +72,7 @@
             </div>
         </div>
 
-        <div class="flex bg-sky-10 px-10 py-4 mb-1">
+        <div class="flex bg-sky-10 ps-10 py-4 mb-1">
             <div class="w-10">
                 <div class="bg-orange-50 w-10 h-10 rounded-full flex justify-center items-center">
                     <img src="/images/notification1.png" class="w-8 h-8" />
@@ -85,7 +91,7 @@
             </div>
         </div>
 
-        <div class="flex bg-sky-10 px-10 py-4 mb-1">
+        <div class="flex bg-sky-10 ps-10 py-4 mb-1">
             <div class="w-10">
                 <div class="bg-orange-50 w-10 h-10 rounded-full flex justify-center items-center">
                     <img src="/images/notification1.png" class="w-8 h-8" />
