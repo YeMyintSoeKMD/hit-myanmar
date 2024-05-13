@@ -29,6 +29,12 @@
                             Messages
                         </router-link>
                     </li>
+                    <li>
+                        <router-link :to="{ name: 'profileNotifications' }" class="px-2 py-4">
+                            <img src="/images/notification.png" class="!w-6 me-1" />
+                            Notifications
+                        </router-link>
+                    </li>
                     <li class="py-2">
                         <router-link :to="{ name: 'profileEdit' }" class="px-2">
                             <img src="/images/profile.png" class="w-6 me-1" />
@@ -74,6 +80,12 @@
                             <router-link :to="{ name: 'profileMessages' }" class="px-2 py-4">
                                 <img src="/images/profile.png" class="!w-6 me-1" />
                                 Messages
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'profileNotifications' }" class="px-2 py-4">
+                                <img src="/images/profile.png" class="!w-6 me-1" />
+                                Notifications
                             </router-link>
                         </li>
                         <li>

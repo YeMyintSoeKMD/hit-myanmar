@@ -14,6 +14,7 @@ import ProfileEdit from '@/views/ProfileEdit.vue'
 import ProfileMessages from '@/views/ProfileMessages.vue'
 import Blogs from '@/views/Blogs.vue'
 import BlogDetail from '@/views/BlogDetail.vue'
+import ProfileNotifications from '@/views/ProfileNotifications.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -78,6 +79,11 @@ const router = createRouter({
           path: 'messages',
           name: 'profileMessages',
           component: ProfileMessages
+        },
+        {
+          path: 'messages',
+          name: 'profileNotifications',
+          component: ProfileNotifications
         }
       ]
     },
