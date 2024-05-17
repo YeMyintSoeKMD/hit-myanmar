@@ -122,6 +122,7 @@ const navigation = [
   { name: 'Courses', href: 'courses' },
   { name: 'Roadmap', href: 'roadmap' },
   { name: 'Blogs', href: 'blogs' },
+  { name: 'Gallery', href: 'gallery' }
 ]
 
 const footerNavigation = {
