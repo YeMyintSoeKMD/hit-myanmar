@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto px-8 2xl:px-40 pt-32">
+    <div class="container mx-auto px-8 2xl:px-40 pt-40">
         <div class="pb-28">
             <div class="box-container">
                 <div class="box">
@@ -22,7 +22,7 @@
             </p>
         </div>
 
-        <!-- <div class="overflow-hidden"> -->
+       
         <div class="mt-14 flex justify-end gap-4 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
               <div
                 class="ml-auto flex-none space-y-4 sm:ml-0 lg:order-last xl:order-none">
@@ -99,7 +99,7 @@
               </div>
             </div>
           </div>
-    <!-- </div> -->
+    
 </template>
 
 <script setup>
