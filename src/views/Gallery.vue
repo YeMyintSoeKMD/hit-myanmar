@@ -21,7 +21,7 @@
         </p>
       </div>
       <div
-        class="grid xl:grid-cols-6 lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 xl:gap-x-14 lg:gap-24 md:gap-0 sm:gap-14 gap-1 flex items-end">
+        class="grid xl:grid-cols-6 lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 xl:gap-x-14 lg:gap-24 md:gap-0 sm:gap-14 gap-5 flex items-end">
         <div>
           <div class="relative sm:w-48 sm:h-60 w-full">
             <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""
@@ -43,7 +43,7 @@
             <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
           </div>
         </div>
-        <div class="lg:col-span-3 grid lg:gap-y-5 md:gap-y-9 sm:gap-y-4 gap-y-1">
+        <div class="lg:col-span-3 grid lg:gap-y-5 md:gap-y-9 sm:gap-y-4 gap-y-5">
           <div class="relative w-full h-64">
             <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt=""
               class="aspect-[2/3] rounded-xl bg-gray-900/5 object-cover shadow-lg w-full h-full" />
