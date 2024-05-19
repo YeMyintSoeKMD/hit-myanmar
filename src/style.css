@@ -95,5 +95,19 @@
         font-size: 56px;
     }
 
+    .space-grotesk-600 {
+        font-family: "Space Grotesk", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .space-grotesk-500 {
+        font-family: "Space Grotesk", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
 
 }
