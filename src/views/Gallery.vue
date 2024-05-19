@@ -43,7 +43,7 @@
             <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
           </div>
         </div>
-        <div class="lg:col-span-3 grid lg:gap-y-5 md:gap-y-9 gap-y-1">
+        <div class="lg:col-span-3 grid lg:gap-y-5 md:gap-y-9 sm:gap-y-4 gap-y-1">
           <div class="relative w-full h-64">
             <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt=""
               class="aspect-[2/3] rounded-xl bg-gray-900/5 object-cover shadow-lg w-full h-full" />
@@ -66,54 +66,92 @@
           <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor, sit amet consectetur Lorem, ipsum dolor.</p>
         </div>
 
-
-        <div class="md:col-span-2">
-          <div class="grid grid-cols-3 gap-4">
-            <div class="grid gap-4">
-              <div>
-                <img class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-              </div>
-            </div>
-            <div class="grid gap-4">
-              <div>
-                <img class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
-              </div>
-            </div>
-            <div class="grid gap-4">
-              <div>
-                <img class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-              </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-              </div>
-            </div>
+        <div class="col-span-2">
+          <div class="md:columns-3 columns-2">
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" />
           </div>
         </div>
 
+
+
+
+      </div>
+    </div>
+
+    <div class="py-20">
+      <div class="grid md:grid-cols-3 sm:grid-cols-1">
+        <div class="w-56 mb-12">
+          <h1 class="text-3xl leading-normal space-grotesk-500">A Photo Gallery of The Lorem</h1>
+          <div class="divider divider-info before:h-0.5 after:h-0.5 m-1 w-64"></div>
+          <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor, sit amet consectetur Lorem, ipsum dolor.</p>
+        </div>
+
+        <div class="col-span-2">
+          <div class="md:columns-3 columns-2">
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-20">
+      <div class="grid md:grid-cols-3 sm:grid-cols-1">
+        <div class="w-56 mb-12">
+          <h1 class="text-3xl leading-normal space-grotesk-500">A Photo Gallery of The Lorem</h1>
+          <div class="divider divider-info before:h-0.5 after:h-0.5 m-1 w-64"></div>
+          <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor, sit amet consectetur Lorem, ipsum dolor.</p>
+        </div>
+
+        <div class="col-span-2">
+          <div class="md:columns-3 columns-2">
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" />
+            <img class="w-full object-cover mb-4 rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" />
+          </div>
+        </div>
       </div>
     </div>
 
