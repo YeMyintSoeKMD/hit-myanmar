@@ -13,7 +13,7 @@
                     <h2>Fullstack
                         Developer</h2>
                 </div>
-                <p class="text-sm mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+                <p class="text-sm mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
                     voluptatem
                     temporibus ipsa id
                     laboriosam
@@ -25,433 +25,185 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-5 py-20">
-            <div class="col-span-3">
-                <h1 class="text-2xl font-medium mb-10">About Me</h1>
-                <p class="leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo maxime
-                    voluptates nostrum nam
-                    eaque
-                    velit veritatis iste autem libero. Et minima accusamus quae eveniet architecto accusantium
-                    quaerat
-                    obcaecati nulla odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis
-                    aut fugiat aperiam necessitatibus sed non officia nam eaque neque. Ex ut dicta atque ratione
-                    adipisci nisi recusandae inventore quia! Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
-                    Iure molestiae ullam quia exercitationem ducimus est ab, facere minus, qui sint praesentium
-                    velit id
-                    ipsam consequuntur non cum nulla reprehenderit quod! Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Dignissimos atque beatae itaque voluptatum! At vel veritatis alias? Debitis
-                    adipisci quo quis est ea, possimus aliquam quisquam, fugiat nesciunt veritatis ullam?</p>
+        <div class="grid grid-cols-1 py-20">
+            <div class="text-center w-3/5 place-self-center">
+                    <h1 class="text-2xl font-medium mb-10">About Me</h1>
+                    <p class="leading-relaxed text-sm font-normal text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo maxime
+                        voluptates nostrum nam
+                        eaque
+                        velit veritatis iste autem libero. Et minima accusamus quae eveniet architecto accusantium
+                        quaerat
+                        obcaecati nulla odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis
+                        aut fugiat aperiam necessitatibus sed non officia nam eaque neque. Ex ut dicta atque ratione
+                        adipisci nisi recusandae inventore quia! Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.</p>
             </div>
-            <div class="ps-20 flex flex-col justify-end">
-                <div class="mb-7">
-                    <h3 class="font-medium mb-1">Email</h3>
-                    <h3 class="text-sm">htetnandarbo@gmail.com</h3>
+            <div class="flex justify-between w-9/12 place-self-center mt-10">
+                <div class="flex flex-col items-center">
+                    <img src="/images/phone5.png" class="w-10 mb-2"/>
+                    <h2 class="text-sm">09-123456789</h2>
                 </div>
-                <div class="mb-7">
-                    <h3 class="font-medium mb-1">Phone</h3>
-                    <h3 class="text-sm">09-123456789</h3>
+                <div class="flex flex-col items-center">
+                    <img src="/images/mail5.png" class="w-9 mb-2"/>
+                    <h2 class="text-sm">htetnandarbo@gmail.com</h2>
                 </div>
-                <div>
-                    <h3 class="font-medium mb-3">Social Media</h3>
-                    <div class="flex gap-10 w-96">
-                        <a href="">
-                            <img src="/images/github3.png" class="w-10" />
-                        </a>
-                        <a href="" class=""><img src="/images/twitter3.png" class="w-10" /></a>
-                        <a href="" class=""><img src="/images/linkedin3.png" class="w-10" /></a>
+                <div class="flex flex-col items-center">
+                    <img src="/images/github5.png" class="w-10 mb-2"/>
+                    <h2 class="text-sm">htetnandarbo@gmail.com</h2>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/images/twitter5.png" class="w-9 mb-2"/>
+                    <h2 class="text-sm">htetnandarbo@gmail.com</h2>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="/images/linkedin5.png" class="w-9 mb-2"/>
+                    <h2 class="text-sm">htetnandarbo@gmail.com</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-20">
+            <h1 class="text-2xl font-medium mb-10 text-center">Skills</h1>
+
+            <div class="grid grid-cols-4 gap-4">
+                <div class="max-w-sm bg-white border border-gray-300 rounded-md shadow ">
+                    <h1 class="p-3 font-medium">Languages</h1>
+                    <hr class="w-full h-0.5 my-1 bg-gray-100">
+                    <div class="p-3 flex flex-wrap">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">HTML</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">CSS</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">Javascript</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">PHP</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">Java</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">Python</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">TypeScript</span>
+                    </div>
+                </div> 
+                <div class="max-w-sm bg-white border border-gray-300 rounded-md shadow ">
+                    <h1 class="p-3 font-medium">Frameworks</h1>
+                    <hr class="w-full h-0.5 my-1 bg-gray-100">
+                    <div class="p-3 flex flex-wrap">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">React</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">Vue</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">Laravel</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">Spring</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">Express . js</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">CakePHP</span>
                     </div>
                 </div>
-            </div>
-
-        </div>
-
-        <div class="py-20">
-            <h1 class="text-2xl font-medium mb-10">Skills</h1>
-            <div class="columns-3">
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
-                <div class="flex items-center mb-4">
-                    <img src="/images/right2.png" class="w-5 me-3" />
-                    <h4>HTML</h4>
-                </div>
+                <div class="max-w-sm bg-white border border-gray-300 rounded-md shadow ">
+                    <h1 class="p-3 font-medium">Databases</h1>
+                    <hr class="w-full h-0.5 my-1 bg-gray-100">
+                    <div class="p-3 flex flex-wrap">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">MySQL</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">PostgreSQL</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">SQL</span>
+                    </div>
+                </div>  
+                <div class="max-w-sm bg-white border border-gray-300 rounded-md shadow ">
+                    <h1 class="p-3 font-medium">Other</h1>
+                    <hr class="w-full h-0.5 my-1 bg-gray-100">
+                    <div class="p-3 flex flex-wrap">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">React</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">Vue</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">Laravel</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">Spring</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">Express . js</span>
+                        <span class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1">CakePHP</span>
+                    </div>
+                </div> 
             </div>
         </div>
 
         <div class="py-20">
-            <h1 class="text-2xl font-medium mb-10">Experiences</h1>
-            <div class="flex justify-between items-start shadow-sm p-10 mb-10">
-                <h3 class="text-orange-500 font-semibold text-lg">HIT</h3>
-                <div>
-                    <h3 class="font-bold text-xl mb-4">Fullstack Developer</h3>
-                    <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
+            <h1 class="text-2xl font-medium mb-10 text-center">Experiences</h1>
+            
 
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
+<div class="grid mb-8 border border-gray-300 rounded-lg shadow-sm md:mb-12 md:grid-cols-2 bg-white">
+    <figure class="flex flex-col items-center text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
+        <blockquote class="text-gray-500 flex justify-between items-center w-full px-5 py-2">
+            <h3 class="text-lg font-semibold text-orange-500">ABC.Co.,Ltd</h3>
+            <p class="my-4 text-sm">Nov 2020 - Feb 2024</p>
+        </blockquote>
+        <hr class="w-full h-0.5 my-1 bg-gray-100">
+        <figcaption class="flex items-center justify-center text-sm leading-loose text-gray-800 p-8">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, vero. Commodi voluptatibus eos quod, quaerat maxime nobis dignissimos, adipisci, amet minima fugiat officiis dolor obcaecati. Deleniti asperiores totam nostrum sunt.</p>
+        </figcaption>    
+    </figure>
+    <figure class="flex flex-col items-center text-center bg-white border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg md:border-e">
+        <blockquote class="text-gray-500 flex justify-between items-center w-full px-5 py-2">
+            <h3 class="text-lg font-semibold text-gray-900 text-orange-500">ABC.Co.,Ltd</h3>
+            <p class="my-4 text-sm">Nov 2020 - Feb 2024</p>
+        </blockquote>
+        <hr class="w-full h-0.5 my-1 bg-gray-100">
+        <figcaption class="flex items-center justify-center text-sm leading-loose text-gray-800 p-8">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, vero. Commodi voluptatibus eos quod, quaerat maxime nobis dignissimos, adipisci, amet minima fugiat officiis dolor obcaecati. Deleniti asperiores totam nostrum sunt.</p>
+        </figcaption>    
+    </figure>
+    <figure class="flex flex-col items-center text-center bg-white border-b border-gray-200 md:rounded-t-none md:rounded-ss-lg md:border-e">
+        <blockquote class="text-gray-500 flex justify-between items-center w-full px-5 py-2">
+            <h3 class="text-lg font-semibold text-gray-900 text-orange-500">ABC.Co.,Ltd</h3>
+            <p class="my-4 text-sm">Nov 2020 - Feb 2024</p>
+        </blockquote>
+        <hr class="w-full h-0.5 my-1 bg-gray-100">
+        <figcaption class="flex items-center justify-center text-sm leading-loose text-gray-800 p-8">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, vero. Commodi voluptatibus eos quod, quaerat maxime nobis dignissimos, adipisci, amet minima fugiat officiis dolor obcaecati. Deleniti asperiores totam nostrum sunt.</p>
+        </figcaption>    
+    </figure>
+    <figure class="flex flex-col items-center text-center bg-white border-b border-gray-200 rounded-b-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
+        <blockquote class="text-gray-500 flex justify-between items-center w-full px-5 py-2">
+            <h3 class="text-lg font-semibold text-gray-900 text-orange-500">ABC.Co.,Ltd</h3>
+            <p class="my-4 text-sm">Nov 2020 - Feb 2024</p>
+        </blockquote>
+        <hr class="w-full h-0.5 my-1 bg-gray-100">
+        <figcaption class="flex items-center justify-center text-sm leading-loose text-gray-800 p-8">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, vero. Commodi voluptatibus eos quod, quaerat maxime nobis dignissimos, adipisci, amet minima fugiat officiis dolor obcaecati. Deleniti asperiores totam nostrum sunt.</p>
+        </figcaption>    
+    </figure>
+</div>
 
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
 
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-                    </ul>
-                </div>
-                <h3 class="text-sm text-gray-500">Nov 2020 - Feb 2024</h3>
-            </div>
-
-            <div class="flex justify-between items-start shadow-sm p-10 mb-10">
-                <h3 class="text-orange-500 font-semibold text-lg">HIT</h3>
-                <div>
-                    <h3 class="font-bold text-xl mb-4">Fullstack Developer</h3>
-                    <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-                    </ul>
-                </div>
-                <h3 class="text-sm text-gray-500">Nov 2020 - Feb 2024</h3>
-            </div>
-
-            <div class="flex justify-between items-start shadow-sm p-10 mb-10">
-                <h3 class="text-orange-500 font-semibold text-lg">HIT</h3>
-                <div>
-                    <h3 class="font-bold text-xl mb-4">Fullstack Developer</h3>
-                    <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-
-                        <li class="flex items-center text-sm">
-                            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                            </svg>
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </li>
-                    </ul>
-                </div>
-                <h3 class="text-sm text-gray-500">Nov 2020 - Feb 2024</h3>
-            </div>
         </div>
 
         <div class="py-20">
-            <h1 class="text-2xl font-medium mb-10">Projects</h1>
-            <div class="mb-10">
-                <h3 class="text-xl font-bold mb-5">Project 1</h3>
-                <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-                </ul>
-
-            </div>
-            <div class="mb-10">
-                <h3 class="text-xl font-bold mb-5">Project 2</h3>
-                <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="mb-10">
-                <h3 class="text-xl font-bold mb-5">Project 3</h3>
-                <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-
-                    <li class="flex items-center text-sm">
-                        <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                        </svg>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </li>
-                </ul>
-
+            <h1 class="text-2xl font-medium mb-10 text-center">Projects</h1>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="max-w-sm bg-white border border-gray-300 rounded-md shadow ">
+                    <h1 class="p-3 font-medium text-xs">HTML, CSS, Javascript, Vue.js, Laravel</h1>
+                    <hr class="w-full h-0.5 my-1 bg-gray-100">
+                    <div class="px-5 pt-3 pb-5">
+                        <h1 class="font-bold mb-4">School Website</h1>
+                    <p class="mb-4 text-xs leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum ullam atque ipsa modi nostrum harum itaque nihil! Sequi, atque commodi eius nihil error in fugit excepturi quo suscipit pariatur.</p>
+                    <button class="btn btn-sm bg-white border-orange-500 rounded-sm text-xs font-medium">View Work</button>
+                </div>
+                </div> 
+                <div class="max-w-sm bg-white border border-gray-300 rounded-md shadow ">
+                    <h1 class="p-3 font-medium text-xs">HTML, CSS, Javascript, Vue.js, Laravel</h1>
+                    <hr class="w-full h-0.5 my-1 bg-gray-100">
+                    <div class="px-5 pt-3 pb-5">
+                        <h1 class="font-bold mb-4">School Website</h1>
+                    <p class="mb-4 text-xs leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum ullam atque ipsa modi nostrum harum itaque nihil! Sequi, atque commodi eius nihil error in fugit excepturi quo suscipit pariatur.</p>
+                    <button class="btn btn-sm bg-white border-orange-500 rounded-sm text-xs font-medium">View Work</button>
+                </div>
+                </div> 
+                <div class="max-w-sm bg-white border border-gray-300 rounded-md shadow ">
+                    <h1 class="p-3 font-medium text-xs">HTML, CSS, Javascript, Vue.js, Laravel</h1>
+                    <hr class="w-full h-0.5 my-1 bg-gray-100">
+                    <div class="px-5 pt-3 pb-5">
+                        <h1 class="font-bold mb-4">School Website</h1>
+                    <p class="mb-4 text-xs leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum ullam atque ipsa modi nostrum harum itaque nihil! Sequi, atque commodi eius nihil error in fugit excepturi quo suscipit pariatur.</p>
+                    <button class="btn btn-sm bg-white border-orange-500 rounded-sm text-xs font-medium">View Work</button>
+                </div>
+                </div> 
+                <div class="max-w-sm bg-white border border-gray-300 rounded-md shadow ">
+                    <h1 class="p-3 font-medium text-xs">HTML, CSS, Javascript, Vue.js, Laravel</h1>
+                    <hr class="w-full h-0.5 my-1 bg-gray-100">
+                    <div class="px-5 pt-3 pb-5">
+                        <h1 class="font-bold mb-4">School Website</h1>
+                    <p class="mb-4 text-xs leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum ullam atque ipsa modi nostrum harum itaque nihil! Sequi, atque commodi eius nihil error in fugit excepturi quo suscipit pariatur.</p>
+                    <button class="btn btn-sm bg-white border-orange-500 rounded-sm text-xs font-medium">View Work</button>
+                </div>
+                </div> 
             </div>
         </div>
     </div>
