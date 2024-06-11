@@ -50,7 +50,7 @@
     <div class="mt-5 flex flex-wrap gap-2">
           <select class="select select-bordered select-sm my-1">
             <option disabled selected>Categories</option>
-            <option>Lorem ipsum</option>
+            <option>Lorem ipsum dolar amist</option>
             <option>Drama</option>
             <option>Action</option>
           </select>

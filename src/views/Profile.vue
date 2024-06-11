@@ -9,6 +9,7 @@
                 </div>
 
                 <h2 class="font-semibold text-xl mt-1">Htet Nandar Bo</h2>
+                
 
                 <ul class="menu w-56 rounded-box px-0 mt-5">
                     <li class="py-2">
@@ -57,12 +58,20 @@
             </div>
 
             <div class="block lg:hidden flex items-center mb-10">
-                <div class="avatar" @click="toggleMenu">
-                    <div class="w-14 rounded-full cursor-pointer">
+                <div class="avatar">
+                    <div class="w-14 rounded-full">
                         <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                     </div>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-xl mt-1 ms-2">Htet Nandar Bo</h2>
+                </div>
+                <div class="ml-auto relative">
+                <div class="cursor-pointer" @click="toggleMenu">
+                    <img src="/images/three-dots.png" class="w-8"/>
+                </div>
 
-                    <ul class="menu bg-white shadow-lg w-56 p-0 [&_li>*]:rounded-none absolute top-16 z-10"
+                <ul class="menu bg-white shadow-lg w-56 p-0 [&_li>*]:rounded-none absolute top-16 right-0 z-10"
                         :class="{ 'hidden': !menuVisible }">
                         <li>
                             <router-link :to="{ name: 'profileCourses' }" class="px-2 py-4">
@@ -107,10 +116,9 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <h2 class="font-semibold text-xl mt-1 ms-2">Htet Nandar Bo</h2>
-                </div>
+                    </div>
+
+
             </div>
 
             <router-view></router-view>
