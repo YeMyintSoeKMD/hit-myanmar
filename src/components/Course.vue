@@ -1,5 +1,5 @@
 <template>
-  <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-4 gap-y-10 mt-16">
+  <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-4 gap-y-10">
     <div v-for="course in courses" :key="course.id">
       <img :src="course.imageUrl" class="w-full h-60 rounded object-cover" />
       <div class="mt-4">
