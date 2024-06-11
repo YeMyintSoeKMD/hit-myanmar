@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-4 xl:bg-rose-500 lg:bg-green-500 md:bg-blue-200 sm:bg-yellow-200 bg-violet-500">
+    <div class="col-span-4">
         <div class="md:flex justify-between items-center">
             <h1 class="text-2xl font-bold">My Courses</h1>
             <label class="input input-bordered flex items-center gap-2 rounded-2xl !h-10 md:mt-0 mt-5">
