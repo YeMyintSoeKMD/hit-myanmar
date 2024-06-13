@@ -38,26 +38,17 @@
                         adipisci nisi recusandae inventore quia! Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit.</p>
             </div>
-            <div class="flex justify-between w-9/12 place-self-center mt-10">
-                <div class="flex flex-col items-center">
-                    <img src="/images/phone5.png" class="w-10 mb-2"/>
-                    <h2 class="text-sm">09-123456789</h2>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="/images/mail5.png" class="w-9 mb-2"/>
-                    <h2 class="text-sm">htetnandarbo@gmail.com</h2>
-                </div>
-                <div class="flex flex-col items-center">
+            <div class="flex place-self-center mt-10">
+                <div class="mx-3">
                     <img src="/images/github5.png" class="w-10 mb-2"/>
-                    <h2 class="text-sm">htetnandarbo@gmail.com</h2>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="/images/twitter5.png" class="w-9 mb-2"/>
-                    <h2 class="text-sm">htetnandarbo@gmail.com</h2>
+                <div class="mx-3">
+                    <img src="/images/github5.png" class="w-10 mb-2"/>
+                  
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="/images/linkedin5.png" class="w-9 mb-2"/>
-                    <h2 class="text-sm">htetnandarbo@gmail.com</h2>
+                <div class="mx-3">
+                    <img src="/images/github5.png" class="w-10 mb-2"/>
+                   
                 </div>
             </div>
         </div>
