@@ -2,12 +2,12 @@
   <div class="bg-white">
     <!-- Header -->
     <header class="absolute inset-x-0 top-0 z-50">
-      <div class="px-5 py-3 bg-teal-700 text-xs sm:text-sm md:text-base text-center">
+       <!-- <div class="px-5 py-3 bg-teal-700 text-xs sm:text-sm md:text-base text-center">
         <a href="" class="flex justify-center text-white">
           <span>July နဲ့ August မှာ In-class ၊ Online-live-class တွေဖွင့်ဖို့ရှိပါမယ်နော်။</span>
           <ArrowLongRightIcon class="w-5" />
         </a>
-      </div>
+      </div>  -->
       <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <router-link :to="{ name: 'home' }" class="-m-1.5 p-1.5">

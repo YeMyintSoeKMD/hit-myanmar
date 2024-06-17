@@ -1,8 +1,8 @@
 <template>
-    <div class="container mx-auto px-8 2xl:px-40 pt-32">
+    <div class="ms-8 pt-32">
         <div class="grid lg:grid-cols-4">
             <div class="lg:col-span-3">
-                <div class="lg:pe-10">
+                <div class="lg:pe-6">
                     <video controls class="rounded-lg w-full">
                         <source src="/images/video1.mp4" type="video/mp4" />
                     </video>
@@ -30,8 +30,10 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="border rounded-md p-4 pb-8 mb-5">
+            <div class="lg:col-span-1">
+             <div class="lg:fixed lg:top-32 lg:right-0 lg:w-1/4">
+             <div class="overflow-hidden">
+                <div class="border border-r-0 rounded-tl-md rounded-bl-md p-4 pb-8 mb-5">
                     <h1 class=" font-bold">Your Progress</h1>
                     <div class="mt-4">
                         <div class="progress-container h-1.5 relative rounded-lg bg-gray-200"
@@ -49,8 +51,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="join join-vertical w-full">
-                    <div class="collapse collapse-arrow join-item border border-base-300">
+                <div class="join block join-vertical w-full rounded-tr-none rounded-br-none max-h-96 overflow-y-auto hide-scrollbar">
+                    <div class="collapse collapse-arrow join-item border border-r-0 rounded-tl-md rounded-bl-md">
                         <input type="checkbox" checked="checked" />
                         <div class="collapse-title text-md font-bold">
                             Introduction to HTML
@@ -112,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="collapse collapse-arrow join-item border border-base-300">
+                    <div class="collapse collapse-arrow join-item border border-r-0 rounded-tl-md rounded-bl-md">
                         <input type="checkbox" />
                         <div class="collapse-title text-md font-bold">
                             Introduction to HTML
@@ -174,7 +176,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="collapse collapse-arrow join-item border border-base-300">
+                    <div class="collapse collapse-arrow join-item border border-r-0 rounded-tl-md rounded-bl-md">
                         <input type="checkbox" />
                         <div class="collapse-title text-md font-bold">
                             Introduction to HTML
@@ -236,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="collapse collapse-arrow join-item border border-base-300">
+                    <div class="collapse collapse-arrow join-item border border-r-0 rounded-tl-md rounded-bl-md">
                         <input type="checkbox" />
                         <div class="collapse-title text-md font-bold">
                             Introduction to HTML
@@ -299,6 +301,8 @@
                         </div>
                     </div>
                 </div>
+                </div>
+             </div>
             </div>
         </div>
     </div>
@@ -320,4 +324,13 @@ onMounted(() => {
 
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+ .hide-scrollbar {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+</style>
