@@ -98,7 +98,7 @@
       </transition>
     </router-view>
     <!-- Footer -->
-    <footer class="mx-auto mt-32 max-w-7xl overflow-hidden px-6 pb-20 sm:pb-24 lg:px-8">
+    <footer class="mx-auto mt-32 max-w-7xl overflow-hidden px-6 pb-20 sm:pb-24 lg:px-8 relative">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
         <div v-for="item in footerNavigation.main" :key="item.name" class="pb-6">
           <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
@@ -113,7 +113,30 @@
       </div>
       <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2020 Your Company, Inc. All rights reserved.
       </p>
+
+    <button class="gtt fixed bottom-28 right-16">
+     <svg
+    stroke-width="2"
+    stroke="white"
+    viewBox="0 0 24 24"
+    fill="white"
+    class="h-6 w-6"
+    xmlns="http://www.w3.org/2000/svg"
+    width="20px"
+  >
+    <path
+      d="M14 5l7 7m0 0l-7 7m7-7H3"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    ></path>
+  </svg>
+ 
+</button>
+
     </footer>
+
+    
+
   </div>
 </template>
 
@@ -259,4 +282,33 @@ const toggleMenu = () => {
   opacity: 0;
   transform: translateX(-100px);
 }
+
+.gtt {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.gtt svg {
+  width: 20px;
+  transform:rotate(-45deg);
+  transition: 0.2s ease-out;
+}
+
+.gtt:hover svg {
+   transform: rotate(-90deg);
+}
+
+
+
 </style>
