@@ -4,7 +4,7 @@
             <div class="grid lg:grid-cols-2">
 
                 <div class="lg:pe-20 pb-14 lg:pb-0">
-                    <router-link :to="{ name: 'coursedetail' }">
+                    <router-link :to="{ name: 'courseDetail' }">
                         <div class="flex items-center cursor-pointer">
                             <img src="/images/back-arrow.png" class="w-5" />
                             <p class="font-medium ms-1">

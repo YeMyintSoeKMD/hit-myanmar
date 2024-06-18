@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <!-- Header -->
-    <header class="absolute inset-x-0 top-0 z-50">
+    <header v-if="showHeader" class="absolute inset-x-0 top-0 z-50">
        <!-- <div class="px-5 py-3 bg-teal-700 text-xs sm:text-sm md:text-base text-center">
         <a href="" class="flex justify-center text-white">
           <span>July နဲ့ August မှာ In-class ၊ Online-live-class တွေဖွင့်ဖို့ရှိပါမယ်နော်။</span>
@@ -98,7 +98,7 @@
       </transition>
     </router-view>
     <!-- Footer -->
-    <footer class="mx-auto mt-32 max-w-7xl overflow-hidden px-6 pb-20 sm:pb-24 lg:px-8 relative">
+    <footer v-if="showFooter" class="mx-auto mt-32 max-w-7xl overflow-hidden px-6 pb-20 sm:pb-24 lg:px-8 relative">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
         <div v-for="item in footerNavigation.main" :key="item.name" class="pb-6">
           <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
@@ -236,26 +236,26 @@ const footerNavigation = {
 
 const mobileMenuOpen = ref(false)
 
-// const showHeader = ref(true);
-// const showFooter = ref(true);
+const showHeader = ref(true);
+const showFooter = ref(true);
 
-// const router = useRouter();
+const router = useRouter();
 
-// router.beforeEach((to, from, next) => {
-//   // Check if the current route is "payment"
-//   if (to.name === 'payment') {
-//     // Hide header and footer for payment route
-//     showHeader.value = false;
-//     showFooter.value = false;
-//     // console.log(showHeader);
-//   } else {
-//     // Show header and footer for other routes
-//     showHeader.value = true;
-//     showFooter.value = true;
-//     // console.log(showHeader);
-//   }
-//   next();
-// });
+router.beforeEach((to, from, next) => {
+  // Check if the current route is "payment"
+  if (to.name === 'coursestream') {
+    // Hide header and footer for payment route
+    showHeader.value = false;
+    showFooter.value = false;
+    // console.log(showHeader);
+  } else {
+    // Show header and footer for other routes
+    showHeader.value = true;
+    showFooter.value = true;
+    // console.log(showHeader);
+  }
+  next();
+});
 
 const menuVisible = ref(false);
 const toggleMenu = () => {
