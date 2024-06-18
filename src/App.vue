@@ -347,6 +347,7 @@ const toggleMenu = () => {
   cursor: pointer;
   /* position: relative; */
   border: none;
+  box-shadow: 0px 0px 0px 4px rgba(201, 188, 248, 0.253);
 }
 
 .arrow path {
