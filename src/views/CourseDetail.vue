@@ -1,15 +1,13 @@
 <template>
-
   <div class="container mx-auto px-7 2xl:px-40 pt-32">
-
     <div class="grid grid-cols-1 lg:grid-cols-3">
       <div class="col-span-2 lg:pe-6">
         <img src="/images/course1.jpg" class="w-full object-cover rounded-md shadow-lg" />
         <h1 class="font-bold text-3xl my-5">Professional Fullstack Developer Class</h1>
         <p class="text-sm">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad ex animi voluptas incidunt? Aliquam quod
-          voluptatibus dolores ipsum veritatis, libero molestiae tenetur neque provident, fuga eum odio labore
-          blanditiis. Tenetur?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad ex animi voluptas
+          incidunt? Aliquam quod voluptatibus dolores ipsum veritatis, libero molestiae
+          tenetur neque provident, fuga eum odio labore blanditiis. Tenetur?
         </p>
       </div>
 
@@ -43,7 +41,7 @@
 
           <div class="flex items-center mt-3">
             <img src="/images/certificate.png" class="w-5 me-3" />
-            <p class="text-sm"> Certificate of completion</p>
+            <p class="text-sm">Certificate of completion</p>
           </div>
         </div>
 
@@ -51,8 +49,11 @@
 
         <div>
           <h1 class="font-semibold text-2xl">180,000 MMK</h1>
-          <router-link :to="{ name: 'payment' }" class="btn btn-info text-white w-full mt-3 text-lg rounded-md">Enroll
-            Now</router-link>
+          <router-link
+            :to="{ name: 'payment' }"
+            class="btn btn-info text-white w-full mt-3 text-lg rounded-md"
+            >Enroll Now</router-link
+          >
         </div>
       </div>
     </div>
@@ -85,39 +86,36 @@
           <button class="font-bold text-orange-400">See more</button>
           <img src="/images/down-arrow.png" class="w-6" />
         </div>
-
       </div>
-
     </div>
 
     <!-- Course content -->
     <div class="mt-14">
       <h1 class="font-bold text-3xl mb-6">Course Content</h1>
       <div>
-        <div class="collapse collapse-arrow bg-white border border-info rounded-md mb-3">
-          <input type="radio" name="my-accordion-3" checked="checked" />
-          <div class="collapse-title text-base font-medium">
-            Click to open this one and close others
-          </div>
-          <div class="collapse-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatem alias enim veniam dolore esse
-              ipsam, sint consectetur. Ipsa numquam ipsum et obcaecati alias officiis omnis fuga libero nisi eius?</p>
-          </div>
-        </div>
-
-        <div class="collapse collapse-arrow bg-white border border-info rounded-md mb-3">
-          <input type="radio" name="my-accordion-3" />
-          <div class="collapse-title text-base font-medium">
-            Click to open this one and close others
+        <div class="collapse collapse-plus bg-white border rounded-lg mb-3">
+          <input type="checkbox" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            Click me to show/hide content
           </div>
           <div class="collapse-content">
             <p>hello</p>
           </div>
         </div>
-        <div class="collapse collapse-arrow bg-white border border-info rounded-md mb-3">
-          <input type="radio" name="my-accordion-3" />
-          <div class="collapse-title text-base font-medium">
-            Click to open this one and close others
+
+        <div class="collapse collapse-plus bg-white border rounded-lg mb-3">
+          <input type="checkbox" />
+          <div class="collapse-title text-xl font-medium">
+            Click me to show/hide content
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-white border rounded-lg mb-3">
+          <input type="checkbox" />
+          <div class="collapse-title text-xl font-medium">
+            Click me to show/hide content
           </div>
           <div class="collapse-content">
             <p>hello</p>
@@ -131,22 +129,24 @@
       <h1 class="font-bold text-3xl mb-6">Description</h1>
       <div>
         <p class="mb-3">
-          Become a Python Programmer and learn one of employer's most requested skills of 2023!
-
-          This is the most comprehensive, yet straight-forward, course for the Python programming language on Udemy!
-          Whether you have never programmed before, already know basic syntax, or want to learn about the advanced
-          features of Python, this course is for you! In this course we will teach you Python 3.
+          Become a Python Programmer and learn one of employer's most requested skills of
+          2023! This is the most comprehensive, yet straight-forward, course for the
+          Python programming language on Udemy! Whether you have never programmed before,
+          already know basic syntax, or want to learn about the advanced features of
+          Python, this course is for you! In this course we will teach you Python 3.
         </p>
 
         <p class="mb-3">
-          With over 100 lectures and more than 21 hours of video this comprehensive course leaves no stone unturned!
-          This course includes quizzes, tests, coding exercises and homework assignments as well as 3 major projects to
-          create a Python project portfolio!
+          With over 100 lectures and more than 21 hours of video this comprehensive course
+          leaves no stone unturned! This course includes quizzes, tests, coding exercises
+          and homework assignments as well as 3 major projects to create a Python project
+          portfolio!
         </p>
 
         <p class="mb-3 font-semibold text-gray-300">
-          Learn how to use Python for real-world tasks, such as working with PDF Files, sending emails, reading Excel
-          files, Scraping websites for informations, working with image files, and much more!
+          Learn how to use Python for real-world tasks, such as working with PDF Files,
+          sending emails, reading Excel files, Scraping websites for informations, working
+          with image files, and much more!
         </p>
 
         <div class="flex">
@@ -160,18 +160,25 @@
     <div class="mt-14">
       <h1 class="font-bold text-3xl mb-6">Featured Review</h1>
       <div class="relative mb-6">
-        <textarea class="textarea textarea-info w-full text-base resize-none h-36" placeholder="Share feedback . . ."
-          style="scrollbar-width: none;"></textarea>
+        <textarea
+          class="textarea textarea-info w-full text-base resize-none h-36"
+          placeholder="Share feedback . . ."
+          style="scrollbar-width: none"
+        ></textarea>
         <div class="tooltip tooltip-bottom" data-tip="Send">
           <div
-            class="absolute w-9 bottom-2 right-2 cursor-pointer rounded-full hover:bg-gray-100 transition duration-300">
+            class="absolute w-9 bottom-2 right-2 cursor-pointer rounded-full hover:bg-gray-100 transition duration-300"
+          >
             <img src="/images/send.png" class="w-full p-2" />
           </div>
         </div>
       </div>
       <div>
         <div class="flex items-center">
-          <img src="/images/student.jpg" class="w-20 h-20 rounded-full object-cover me-3" />
+          <img
+            src="/images/student.jpg"
+            class="w-20 h-20 rounded-full object-cover me-3"
+          />
           <div>
             <h4 class="font-bold">Htet Nandar Bo</h4>
             <p class="text-sm text-gray-500">2 years ago</p>
@@ -179,24 +186,19 @@
         </div>
 
         <p class="text-justify mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Possimus est harum natus culpa perferendis ipsam enim beatae
-          doloremque amet temporibus voluptatem libero officiis, ipsum,
-          odio labore totam. Inventore, quae est? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, nobis
-          nihil, consequuntur libero in inventore maxime blanditiis ipsa labore illum optio voluptatibus voluptatum!
-          Expedita fugiat, voluptatibus repellendus necessitatibus veritatis praesentium!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus est harum
+          natus culpa perferendis ipsam enim beatae doloremque amet temporibus voluptatem
+          libero officiis, ipsum, odio labore totam. Inventore, quae est? Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Nemo, nobis nihil, consequuntur
+          libero in inventore maxime blanditiis ipsa labore illum optio voluptatibus
+          voluptatum! Expedita fugiat, voluptatibus repellendus necessitatibus veritatis
+          praesentium!
         </p>
       </div>
-
     </div>
   </div>
-
-
-
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>

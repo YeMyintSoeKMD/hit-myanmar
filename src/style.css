@@ -118,5 +118,9 @@
         display: none;
       }
 
+      .w-49{
+        width:49%;
+      }
+
 
 }

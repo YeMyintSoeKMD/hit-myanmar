@@ -46,7 +46,7 @@
         </div>
 
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <router-link :to="{ name: 'profile' }">
+          <!-- <router-link :to="{ name: 'profile' }">
             <div class="tooltip tooltip-bottom" data-tip="Go to profile">
               <div class="avatar flex flex-col items-end">
                 <div class="w-14 rounded-full cursor-pointer">
@@ -54,23 +54,27 @@
                     src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
                   />
                 </div>
-
-                <!-- <ul class="menu shadow-md bg-white w-56 p-0 [&_li>*]:rounded-none absolute top-16 z-10"
-              :class="{ 'hidden': !menuVisible }">
-              <li>
-                <router-link :to="{ name: 'profile' }" class="py-4">
-                  <img src="/images/profile.png" class="!w-6 me-1" />
-                  Profile
-                </router-link>
-              </li>
-              <li><a class="py-4">
-                  <img src="/images/logout.png" class="!w-6 me-1" />
-                  Logout
-                </a></li>
-            </ul> -->
               </div>
             </div>
-          </router-link>
+          </router-link> -->
+          <div class="dropdown dropdown-end">
+            <div tabindex="0">
+              <div class="avatar flex flex-col items-end">
+                <div class="w-14 rounded-full cursor-pointer">
+                  <img
+                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
+            >
+              <li><router-link :to="{ name: 'profile' }">Profile</router-link></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
       <Dialog
@@ -161,32 +165,25 @@
         &copy; 2020 Your Company, Inc. All rights reserved.
       </p>
 
-      <!-- <button class="gtt fixed bottom-28 right-16">
-        <svg
-          stroke-width="2"
-          stroke="white"
-          viewBox="0 0 24 24"
-          fill="white"
-          class="h-6 w-6"
-          xmlns="http://www.w3.org/2000/svg"
-          width="20px"
+      <transition name="btt-transition">
+        <button
+          v-show="backToTopVisible"
+          @click="scrollToTop"
+          class="btt w-11 h-11 bg-gradient-to-t from-cyan-400 to-blue-500 flex items-center justify-center rounded-full cursor-pointer border-0 shadow-cyan-500/50 fixed bottom-10 right-6"
         >
-          <path
-            d="M14 5l7 7m0 0l-7 7m7-7H3"
-            stroke-linejoin="round"
-            stroke-linecap="round"
-          ></path>
-        </svg>
-      </button> -->
-
-      <button class="btt fixed bottom-28 right-16">
-        <svg height="1.2em" class="arrow" viewBox="0 0 512 512">
-          <path
-            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
-          ></path>
-        </svg>
-        <p class="text">Back to Top</p>
-      </button>
+          <svg height="1.2em" class="arrow" viewBox="0 0 512 512">
+            <path
+              class="fill-white"
+              d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+            ></path>
+          </svg>
+          <p
+            class="text text-xs w-24 absolute -bottom-5 opacity-0 transition duration-700 text-gray-800 flex items-center justify-center"
+          >
+            Back to Top
+          </p>
+        </button>
+      </transition>
     </footer>
   </div>
 </template>
@@ -316,6 +313,24 @@ const menuVisible = ref(false);
 const toggleMenu = () => {
   menuVisible.value = !menuVisible.value;
 };
+
+const backToTopVisible = ref(false);
+
+const handleScroll = () => {
+  backToTopVisible.value = window.scrollY > 800; // Show the button after scrolling 200px
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 </script>
 <style scoped>
 .route-enter-from {
@@ -334,37 +349,6 @@ const toggleMenu = () => {
 .route-leave-to {
   opacity: 0;
   transform: translateX(-100px);
-}
-
-.btt {
-  width: 45px;
-  height: 45px;
-  background: linear-gradient(#48aff8, #9af5f5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-  /* position: relative; */
-  border: none;
-  box-shadow: 0px 0px 0px 4px rgba(201, 188, 248, 0.253);
-}
-
-.arrow path {
-  fill: white;
-}
-
-.text {
-  font-size: 0.7em;
-  width: 100px;
-  position: absolute;
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: -20px;
-  opacity: 0;
-  transition-duration: 0.7s;
 }
 
 .btt:hover .text {
@@ -388,29 +372,12 @@ const toggleMenu = () => {
   }
 }
 
-/* .gtt {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: rgb(20, 20, 20);
-  border: none;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
-  cursor: pointer;
-  transition-duration: 0.3s;
-  overflow: hidden;
+.btt-transition-enter-active,
+.btt-transition-leave-active {
+  transition: opacity 0.5s;
 }
-
-.gtt svg {
-  width: 20px;
-  transform: rotate(-45deg);
-  transition: 0.2s ease-out;
+.btt-transition-enter-from,
+.btt-transition-leave-to {
+  opacity: 0;
 }
-
-.gtt:hover svg {
-  transform: rotate(-90deg);
-} */
 </style>

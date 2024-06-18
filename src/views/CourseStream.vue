@@ -4,14 +4,25 @@
       <div class="xl:col-span-3">
         <div class="xl:pe-3">
           <div class="flex items-center py-8">
-            <div class="w-6 me-3 cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="left-arrow">
-                <path
-                  d="M11.29,12l3.54-3.54a1,1,0,0,0,0-1.41,1,1,0,0,0-1.42,0L9.17,11.29a1,1,0,0,0,0,1.42L13.41,17a1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41Z"
-                ></path>
-              </svg>
-            </div>
-            <h1 class="font-semibold text-lg">Professional Fullstack Developer Class</h1>
+            <router-link
+              :to="{ name: 'profileCourses' }"
+              class="cursor-pointer flex items-center"
+            >
+              <div class="w-6 me-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  id="left-arrow"
+                >
+                  <path
+                    d="M11.29,12l3.54-3.54a1,1,0,0,0,0-1.41,1,1,0,0,0-1.42,0L9.17,11.29a1,1,0,0,0,0,1.42L13.41,17a1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41Z"
+                  ></path>
+                </svg>
+              </div>
+              <h1 class="font-semibold text-lg">
+                Professional Fullstack Developer Class
+              </h1>
+            </router-link>
           </div>
           <video controls class="rounded-lg w-full mt-1">
             <source src="/images/video1.mp4" type="video/mp4" />
