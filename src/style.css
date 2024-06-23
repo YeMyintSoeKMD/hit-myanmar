@@ -122,5 +122,11 @@
         width:49%;
       }
 
+      @media (max-width: 768px) {
+      .timeline-vertical:where(.timeline-snap-icon) > li {
+        --timeline-col-start: minmax(0, 0);
+      }
+      }
+
 
 }
