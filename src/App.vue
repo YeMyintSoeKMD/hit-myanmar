@@ -18,15 +18,62 @@
             <p class="text-xl font-b old">Hornbill-Education</p>
           </router-link>
         </div>
-        <div class="flex lg:hidden">
-          <button
-            type="button"
-            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            @click="mobileMenuOpen = true"
+        <div class="flex gap-6 lg:hidden">
+          <div class="flex">
+            <!-- <router-link :to="{ name: 'profile' }">
+            <div class="tooltip tooltip-bottom" data-tip="Go to profile">
+              <div class="avatar flex flex-col items-end">
+                <div class="w-14 rounded-full cursor-pointer">
+                  <img
+                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </router-link> -->
+            <div class="dropdown dropdown-end">
+              <div tabindex="0">
+                <div class="avatar flex flex-col items-center">
+                  <div class="w-12 rounded-full cursor-pointer">
+                    <img
+                      src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
+              >
+                <li><router-link :to="{ name: 'profile' }">Profile</router-link></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+          <router-link
+            :to="{ name: 'profileNotifications' }"
+            class="noti-btn w-12 h-12 relative flex items-center justify-center rounded-full cursor-pointer border-0 transition duration-300"
           >
-            <span class="sr-only">Open main menu</span>
-            <Bars3Icon class="h-6 w-6" aria-hidden="true" />
-          </button>
+            <svg viewBox="0 0 448 512" class="bell w-6">
+              <path
+                d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"
+              ></path>
+            </svg>
+            <span
+              class="w-4 h-4 rounded-full bg-rose-500 text-white flex items-center justify-center text-xs absolute top-2 right-1.5"
+              >1</span
+            >
+          </router-link>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              @click="mobileMenuOpen = true"
+            >
+              <span class="sr-only">Open main menu</span>
+              <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+            </button>
+          </div>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
           <router-link
@@ -43,38 +90,6 @@
             class="text-sm font-semibold leading-6 text-gray-900"
             >Log in <span aria-hidden="true">&rarr;</span></router-link
           >
-        </div>
-
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <!-- <router-link :to="{ name: 'profile' }">
-            <div class="tooltip tooltip-bottom" data-tip="Go to profile">
-              <div class="avatar flex flex-col items-end">
-                <div class="w-14 rounded-full cursor-pointer">
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                  />
-                </div>
-              </div>
-            </div>
-          </router-link> -->
-          <div class="dropdown dropdown-end">
-            <div tabindex="0">
-              <div class="avatar flex flex-col items-end">
-                <div class="w-14 rounded-full cursor-pointer">
-                  <img
-                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                  />
-                </div>
-              </div>
-            </div>
-            <ul
-              tabindex="0"
-              class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
-            >
-              <li><router-link :to="{ name: 'profile' }">Profile</router-link></li>
-              <li><a>Logout</a></li>
-            </ul>
-          </div>
         </div>
       </nav>
       <Dialog

@@ -457,44 +457,4 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
-.bell path {
-  fill: #605f5f;
-}
-
-.noti-btn:hover .bell {
-  animation: bellRing 0.9s both;
-}
-
-/* bell ringing animation keyframes*/
-@keyframes bellRing {
-  0%,
-  100% {
-    transform-origin: top;
-  }
-
-  15% {
-    transform: rotateZ(10deg);
-  }
-
-  30% {
-    transform: rotateZ(-10deg);
-  }
-
-  45% {
-    transform: rotateZ(5deg);
-  }
-
-  60% {
-    transform: rotateZ(-5deg);
-  }
-
-  75% {
-    transform: rotateZ(2deg);
-  }
-}
-
-.noti-btn:active {
-  transform: scale(0.8);
-}
-</style>
+<style scoped></style>
