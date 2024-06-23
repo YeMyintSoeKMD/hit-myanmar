@@ -1,8 +1,8 @@
 <template>
-  <div class="container mx-auto px-8 2xl:px-40">
+  <div class="container mt-5 mx-auto px-8 2xl:px-40">
     <!-- Hero -->
     <div class="flex flex-col items-center py-20">
-      <div class="avatar mb-4">
+      <div class="avatar mb-6">
         <div class="w-40 rounded-full">
           <img
             src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
