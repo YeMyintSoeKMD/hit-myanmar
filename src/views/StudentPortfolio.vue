@@ -163,7 +163,10 @@
             v-else
             class="md:timeline-start timeline-end timeline-box rounded-lg !me-4 md:ms-0 ms-4 p-7 !mb-7 cursor-default hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
           >
-            <h1 class="font-semibold text-lg">{{ item.title }}</h1>
+            <h1 class="font-semibold text-lg">
+              {{ item.title }}<span class="md:hidden"> ({{ item.date }})</span>
+            </h1>
+
             <h2 class="text-sm mt-1">{{ item.position }}</h2>
             <p class="mt-3 leading-relaxed text-gray-500">
               {{ item.description }}
@@ -189,7 +192,9 @@
             v-if="index % 2 === 0"
             class="timeline-end timeline-box rounded-lg ms-4 p-7 !mb-7 cursor-default hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
           >
-            <h1 class="font-semibold text-lg">{{ item.title }}</h1>
+            <h1 class="font-semibold text-lg">
+              {{ item.title }}<span class="md:hidden"> ({{ item.date }})</span>
+            </h1>
             <h2 class="text-sm mt-1">{{ item.position }}</h2>
             <p class="mt-3 leading-relaxed text-gray-500">
               {{ item.description }}
