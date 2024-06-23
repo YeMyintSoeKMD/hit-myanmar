@@ -10,7 +10,7 @@
         </div>
       </div>
 
-      <div class="text-center w-1/2">
+      <div class="text-center lg:w-1/2">
         <div class="text-2xl font-semibold mb-4">
           <h1 class="text-orange-500 mb-1">Hello, I'am Htet Nandar Bo</h1>
           <h2>Fullstack Developer</h2>
@@ -30,16 +30,20 @@
     </div>
 
     <!-- About Me -->
-    <div class="grid grid-cols-2 py-20 px-20">
-      <div>
-        <div class="flex items-center">
-          <div class="ping me-2"></div>
-          <h1 class="text-2xl font-medium uppercase">About Me</h1>
+    <div class="grid md:grid-cols-2 py-20 lg:px-20">
+      <div class="md:block flex items-center justify-center">
+        <div>
+          <div class="flex md:justify-start justify-center items-center">
+            <div class="ping me-2"></div>
+            <h1 class="text-2xl font-medium uppercase">About Me</h1>
+          </div>
+          <h2 class="text-3xl font-bold mt-4 text-teal-700">Let's Work Together</h2>
         </div>
-        <h2 class="text-3xl font-bold mt-4 text-teal-700">Let's Work Together</h2>
       </div>
-      <div class="place-self-center">
-        <p class="leading-relaxed text-sm font-normal text-gray-600">
+      <div class="place-self-center md:mt-0 mt-9">
+        <p
+          class="leading-relaxed text-sm font-normal text-gray-600 md:text-start text-center"
+        >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo maxime voluptates
           nostrum nam eaque velit veritatis iste autem libero. Et minima accusamus quae
           eveniet architecto accusantium quaerat obcaecati nulla odio. Lorem ipsum dolor
@@ -52,16 +56,18 @@
     </div>
 
     <!-- Skills -->
-    <div class="grid grid-cols-2 py-20 px-20">
-      <div>
-        <div class="flex items-center">
-          <div class="ping me-2"></div>
-          <h1 class="text-2xl font-medium uppercase">Skills</h1>
+    <div class="grid md:grid-cols-2 py-20 lg:px-20">
+      <div class="md:block flex items-center justify-center">
+        <div>
+          <div class="flex items-center">
+            <div class="ping me-2"></div>
+            <h1 class="text-2xl font-medium uppercase">Skills</h1>
+          </div>
+          <h2 class="text-3xl font-bold mt-4 text-teal-700">Key Expertise</h2>
         </div>
-        <h2 class="text-3xl font-bold mt-4 text-teal-700">Key Expertise</h2>
       </div>
 
-      <div class="flex flex-wrap items-center">
+      <div class="flex flex-wrap items-center md:mt-0 mt-9">
         <span
           class="bg-blue-100 text-blue-700 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm my-1"
           >HTML</span
@@ -144,53 +150,23 @@
       </div>
 
       <ul class="timeline timeline-snap-icon timeline-vertical mt-20">
-        <li>
+        <li v-for="(item, index) in timelineItems" :key="index">
+          <hr v-if="index !== 0" style="width: 3px" />
           <div
+            v-if="index % 2 === 0"
             class="timeline-start timeline-box rounded-lg me-4 mb-7"
             style="place-self: start end"
           >
-            2023 - 2024
-          </div>
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="15"
-              height="15"
-              viewBox="0 0 512 512"
-              id="circle"
-            >
-              <path
-                d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm0 398.7c-105.1 0-190.7-85.5-190.7-190.7 0-105.1 85.5-190.7 190.7-190.7 105.1 0 190.7 85.5 190.7 190.7 0 105.1-85.6 190.7-190.7 190.7z"
-                stroke="black"
-                stroke-width="20"
-                fill="none"
-              ></path>
-            </svg>
+            {{ item.date }}
           </div>
           <div
-            class="timeline-end timeline-box rounded-lg ms-4 p-7 mb-7 cursor-default hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
-          >
-            <h1 class="font-semibold text-lg">UX Designer</h1>
-            <h2 class="text-sm mt-1">Vivo - Senior Designer</h2>
-            <p class="mt-3 leading-relaxed text-gray-500">
-              The generated injected humour, or non-characteristic words etc. Cum sociis
-              natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis,
-            </p>
-          </div>
-          <hr style="width: 3px" />
-        </li>
-        <li>
-          <hr style="width: 3px" />
-          <div
+            v-else
             class="timeline-start timeline-box rounded-lg me-4 p-7 mb-7 cursor-default hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
           >
-            <h1 class="font-semibold text-lg">UX Designer</h1>
-            <h2 class="text-sm mt-1">Vivo - Senior Designer</h2>
+            <h1 class="font-semibold text-lg">{{ item.title }}</h1>
+            <h2 class="text-sm mt-1">{{ item.position }}</h2>
             <p class="mt-3 leading-relaxed text-gray-500">
-              The generated injected humour, or non-characteristic words etc. Cum sociis
-              natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis,
+              {{ item.description }}
             </p>
           </div>
           <div class="timeline-middle">
@@ -210,48 +186,21 @@
             </svg>
           </div>
           <div
+            v-if="index % 2 === 0"
+            class="timeline-end timeline-box rounded-lg ms-4 p-7 mb-7 cursor-default hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
+          >
+            <h1 class="font-semibold text-lg">{{ item.title }}</h1>
+            <h2 class="text-sm mt-1">{{ item.position }}</h2>
+            <p class="mt-3 leading-relaxed text-gray-500">
+              {{ item.description }}
+            </p>
+          </div>
+          <div
+            v-else
             class="timeline-end timeline-box rounded-lg ms-4 mb-7"
             style="place-self: start start"
           >
-            2023 - 2024
-          </div>
-
-          <hr style="width: 3px" />
-        </li>
-        <li>
-          <hr style="width: 3px" />
-          <div
-            class="timeline-start timeline-box rounded-lg me-4"
-            style="place-self: start end"
-          >
-            2023 - 2024
-          </div>
-          <div class="timeline-middle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="15"
-              height="15"
-              viewBox="0 0 512 512"
-              id="circle"
-            >
-              <path
-                d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm0 398.7c-105.1 0-190.7-85.5-190.7-190.7 0-105.1 85.5-190.7 190.7-190.7 105.1 0 190.7 85.5 190.7 190.7 0 105.1-85.6 190.7-190.7 190.7z"
-                stroke="black"
-                stroke-width="20"
-                fill="none"
-              ></path>
-            </svg>
-          </div>
-          <div
-            class="timeline-end timeline-box rounded-lg ms-4 p-7 cursor-default hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
-          >
-            <h1 class="font-semibold text-lg">UX Designer</h1>
-            <h2 class="text-sm mt-1">Vivo - Senior Designer</h2>
-            <p class="mt-3 leading-relaxed text-gray-500">
-              The generated injected humour, or non-characteristic words etc. Cum sociis
-              natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis,
-            </p>
+            {{ item.date }}
           </div>
           <hr style="width: 3px" />
         </li>
@@ -260,168 +209,225 @@
 
     <!-- Projects -->
     <div class="py-20">
-      <div class="float-left pe-28">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+        <div class="md:mb-0 mb-9 md:block flex items-center justify-center">
+          <div>
+            <div class="flex items-center md:justify-start justify-center">
+              <div class="ping me-2"></div>
+              <h1 class="text-2xl font-medium uppercase">Projects</h1>
+            </div>
+            <h2 class="text-3xl font-bold mt-4 text-teal-700">Explore My Projects</h2>
+          </div>
+        </div>
+
+        <div
+          class="card rounded-lg cursor-pointer shadow-md p-5 relative hover:shadow-lg transition duration-400 hover:-translate-y-1"
+        >
+          <h3 class="font-bold text-xl">Title</h3>
+          <p class="leading-relaxed tracking-wider text-sm mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit consectetur adipisicing elit consectetur
+            adipisicing elit.
+          </p>
+
+          <div
+            class="card__arrow absolute bottom-0 right-0 flex items-center justify-center bg-rose-500 p-1.5 transition duration-200 rounded-tl-lg rounded-br-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              height="15"
+              width="15"
+              class="transition duration-200"
+            >
+              <path
+                fill="#fff"
+                d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <div
+          class="card rounded-lg cursor-pointer shadow-md p-5 relative hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
+        >
+          <h3 class="font-bold text-xl">Title</h3>
+          <p class="leading-relaxed tracking-wider text-sm mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit consectetur adipisicing elit consectetur
+            adipisicing elit.
+          </p>
+
+          <div
+            class="card__arrow absolute bottom-0 right-0 flex items-center justify-center bg-rose-500 p-1.5 transition duration-200 rounded-tl-lg rounded-br-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              height="15"
+              width="15"
+              class="transition duration-200"
+            >
+              <path
+                fill="#fff"
+                d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <div
+          class="card rounded-lg cursor-pointer shadow-md p-5 relative hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
+        >
+          <h3 class="font-bold text-xl">Title</h3>
+          <p class="leading-relaxed tracking-wider text-sm mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit consectetur adipisicing elit consectetur
+            adipisicing elit.
+          </p>
+
+          <div
+            class="card__arrow absolute bottom-0 right-0 flex items-center justify-center bg-rose-500 p-1.5 transition duration-200 rounded-tl-lg rounded-br-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              height="15"
+              width="15"
+              class="transition duration-200"
+            >
+              <path
+                fill="#fff"
+                d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <div
+          class="card rounded-lg cursor-pointer shadow-md p-5 relative hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
+        >
+          <h3 class="font-bold text-xl">Title</h3>
+          <p class="leading-relaxed tracking-wider text-sm mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit consectetur adipisicing elit consectetur
+            adipisicing elit.
+          </p>
+
+          <div
+            class="card__arrow absolute bottom-0 right-0 flex items-center justify-center bg-rose-500 p-1.5 transition duration-200 rounded-tl-lg rounded-br-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              height="15"
+              width="15"
+              class="transition duration-200"
+            >
+              <path
+                fill="#fff"
+                d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <div
+          class="card rounded-lg cursor-pointer shadow-md p-5 relative hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
+        >
+          <h3 class="font-bold text-xl">Title</h3>
+          <p class="leading-relaxed tracking-wider text-sm mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit consectetur adipisicing elit consectetur
+            adipisicing elit.
+          </p>
+
+          <div
+            class="card__arrow absolute bottom-0 right-0 flex items-center justify-center bg-rose-500 p-1.5 transition duration-200 rounded-tl-lg rounded-br-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              height="15"
+              width="15"
+              class="transition duration-200"
+            >
+              <path
+                fill="#fff"
+                d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="grid grid-cols-2 py-20 px-20">
+      <div>
         <div class="flex items-center">
           <div class="ping me-2"></div>
-          <h1 class="text-2xl font-medium uppercase">Projects</h1>
+          <h1 class="text-2xl font-medium uppercase">Contact</h1>
         </div>
-        <h2 class="text-3xl font-bold mt-4 text-teal-700">Explore My Projects</h2>
+        <h2 class="text-3xl font-bold mt-4 text-teal-700">Let's Build Together</h2>
       </div>
-
-      <!-- <div class="col-span-2"> -->
-      <!-- <div class="flex flex-wrap items-center gap-4"> -->
-      <div
-        class="card rounded-lg cursor-pointer w-96 shadow-md p-5 me-3 mb-5 relative float-left hover:shadow-lg transition duration-400 hover:-translate-y-1"
-      >
-        <h3 class="font-bold text-xl">Title</h3>
-        <p class="leading-relaxed tracking-wider text-sm mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit consectetur adipisicing elit consectetur
-          adipisicing elit.
-        </p>
-
-        <div
-          class="card__arrow absolute bottom-0 right-0 flex items-center justify-center bg-rose-500 p-1.5 transition duration-200 rounded-tl-lg rounded-br-lg"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            height="15"
-            width="15"
-            class="transition duration-200"
-          >
-            <path
-              fill="#fff"
-              d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
-            ></path>
-          </svg>
+      <div class="place-self-center">
+        <div>
+          <div>
+            <h2>htetnandarbo8@gmail.com</h2>
+          </div>
+          <div>
+            <h2>09 - 123456789</h2>
+          </div>
+          <div>
+            <h2>Yangon</h2>
+          </div>
         </div>
+
+        <div></div>
       </div>
-
-      <div
-        class="card rounded-lg cursor-pointer w-96 shadow-md p-5 me-3 mb-5 relative float-left hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
-      >
-        <h3 class="font-bold text-xl">Title</h3>
-        <p class="leading-relaxed tracking-wider text-sm mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit consectetur adipisicing elit consectetur
-          adipisicing elit.
-        </p>
-
-        <div
-          class="card__arrow absolute bottom-0 right-0 flex items-center justify-center bg-rose-500 p-1.5 transition duration-200 rounded-tl-lg rounded-br-lg"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            height="15"
-            width="15"
-            class="transition duration-200"
-          >
-            <path
-              fill="#fff"
-              d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-
-      <div
-        class="card rounded-lg cursor-pointer w-96 shadow-md p-5 me-3 mb-5 relative float-left hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
-      >
-        <h3 class="font-bold text-xl">Title</h3>
-        <p class="leading-relaxed tracking-wider text-sm mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit consectetur adipisicing elit consectetur
-          adipisicing elit.
-        </p>
-
-        <div
-          class="card__arrow absolute bottom-0 right-0 flex items-center justify-center bg-rose-500 p-1.5 transition duration-200 rounded-tl-lg rounded-br-lg"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            height="15"
-            width="15"
-            class="transition duration-200"
-          >
-            <path
-              fill="#fff"
-              d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-
-      <div
-        class="card rounded-lg cursor-pointer w-96 shadow-md p-5 me-3 mb-5 relative float-left hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
-      >
-        <h3 class="font-bold text-xl">Title</h3>
-        <p class="leading-relaxed tracking-wider text-sm mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit consectetur adipisicing elit consectetur
-          adipisicing elit.
-        </p>
-
-        <div
-          class="card__arrow absolute bottom-0 right-0 flex items-center justify-center bg-rose-500 p-1.5 transition duration-200 rounded-tl-lg rounded-br-lg"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            height="15"
-            width="15"
-            class="transition duration-200"
-          >
-            <path
-              fill="#fff"
-              d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-
-      <div
-        class="card rounded-lg cursor-pointer w-96 shadow-md p-5 me-3 mb-5 relative hover:border-white hover:shadow-lg transition duration-400 hover:-translate-y-1"
-      >
-        <h3 class="font-bold text-xl">Title</h3>
-        <p class="leading-relaxed tracking-wider text-sm mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit consectetur adipisicing elit consectetur
-          adipisicing elit.
-        </p>
-
-        <div
-          class="card__arrow absolute bottom-0 right-0 flex items-center justify-center bg-rose-500 p-1.5 transition duration-200 rounded-tl-lg rounded-br-lg"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            height="15"
-            width="15"
-            class="transition duration-200"
-          >
-            <path
-              fill="#fff"
-              d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-
-      <!-- </div> -->
-      <!-- </div> -->
     </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="text-center px-0 mx-0 pt-4 pb-3 bg-teal-700 text-white tracking-wide">
+    &copy; copyright 2022 , Made by
+    <a href="hitmyanmar.com" class="font-bold">hitmyanmar.com</a>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const timelineItems = ref([
+  {
+    date: "2023 - 2024",
+    title: "UX Designer",
+    position: "Vivo - Senior Designer",
+    description:
+      "The generated injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,",
+  },
+  {
+    date: "2023 - 2024",
+    title: "UX Designer",
+    position: "Vivo - Senior Designer",
+    description:
+      "The generated injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,",
+  },
+  {
+    date: "2023 - 2024",
+    title: "UX Designer",
+    position: "Vivo - Senior Designer",
+    description:
+      "The generated injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,",
+  },
+]);
+</script>
 
 <style>
 .ping {
