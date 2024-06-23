@@ -3,7 +3,7 @@
     <!-- Hero -->
     <div class="flex flex-col items-center py-20">
       <div class="avatar mb-4">
-        <div class="w-28 rounded-full">
+        <div class="w-40 rounded-full">
           <img
             src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
           />
@@ -509,9 +509,9 @@
   </div>
 
   <!-- Footer -->
-  <div class="text-center px-0 mx-0 pt-4 pb-3 bg-teal-700 text-white tracking-wide">
+  <div class="text-center px-0 mx-0 pt-4 pb-3 border-t tracking-wide">
     &copy; copyright 2022 , Made by
-    <a href="hitmyanmar.com" class="font-bold">hitmyanmar.com</a>
+    <a href="hitmyanmar.com" class="font-bold text-rose-500">hitmyanmar.com</a>
   </div>
 </template>
 
