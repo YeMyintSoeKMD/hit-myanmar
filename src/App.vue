@@ -214,6 +214,7 @@ const navigation = [
   { name: "Roadmap", href: "roadmap" },
   { name: "Blogs", href: "blogs" },
   { name: "Gallery", href: "gallery" },
+  { name: "Books", href: "books" },
 ];
 
 const footerNavigation = {

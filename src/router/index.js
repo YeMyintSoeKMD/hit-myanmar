@@ -17,6 +17,7 @@ import BlogDetail from '@/views/BlogDetail.vue'
 import ProfileNotifications from '@/views/ProfileNotifications.vue'
 import Gallery from '@/views/Gallery.vue'
 import StudentPortfolio from '@/views/StudentPortfolio.vue'
+import Books from '@/views/Books.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -113,6 +114,11 @@ const router = createRouter({
       path: '/studentportfolio',
       name: 'studentPortfolio',
       component: StudentPortfolio
+    },
+    {
+      path: '/books',
+      name: 'books',
+      component: Books
     }
   ]
 })
