@@ -17,9 +17,6 @@
         </div>
     
         <div class="mt-32">
-    
-           
-    
             <div class="grid grid-cols-2 gap-x-7 gap-y-12">
     
                 <div v-for="book in books" :key="book.id" class="grid grid-cols-5 card card-side bg-base-100 shadow-xl">
