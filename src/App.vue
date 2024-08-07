@@ -311,7 +311,7 @@ const router = useRouter();
 
 router.beforeEach((to, from, next) => {
   // Check if the current route is "payment"
-  if (to.name === "coursestream" || to.name === "studentPortfolio") {
+  if (to.name === "coursestream" || to.name === "studentPortfolio" || to.name === "quiz") {
     // Hide header and footer for payment route
     showHeader.value = false;
     showFooter.value = false;

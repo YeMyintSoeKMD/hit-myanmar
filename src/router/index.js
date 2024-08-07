@@ -18,6 +18,7 @@ import ProfileNotifications from '@/views/ProfileNotifications.vue'
 import Gallery from '@/views/Gallery.vue'
 import StudentPortfolio from '@/views/StudentPortfolio.vue'
 import Books from '@/views/Books.vue'
+import Quiz from '@/views/Quiz.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -119,6 +120,11 @@ const router = createRouter({
       path: '/books',
       name: 'books',
       component: Books
+    },
+    {
+      path: '/quiz',
+      name: 'quiz',
+      component: Quiz
     }
   ]
 })
