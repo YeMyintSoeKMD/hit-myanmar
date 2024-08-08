@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Result</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container mx-auto py-10 px-64">
+        <div class="main w-full">
+            <div class="mb-10 px-3 py-5 bg-teal-100 gap-x-3 rounded-lg relative">
+                <!-- Add this image if all answers are true -->
+                <img src="../../public/images/celebrate.gif" class="block w-44 mb-5 absolute left-0 -top-10" />
+                <div>
+                    <h4 class="text-xl font-bold">Your Final Results</h4>
+                    <p class="font-semibold">You got 3 out of 5</p>
+                </div>
+            </div>
+            <h3 class="text-base md:text-lg font-semibold mb-2">Corrects</h3>
+            <ul class="">
+                <li class="bg-gray-100 px-5 py-4 text-teal-700 rounded-lg mb-3 has-[:checked]:ring-1 has-[:checked]:ring-teal-700 transition-all duration-500">
+                    <label class="flex gap-3 cursor-pointer">
+                        <p class="">Lorem ipsum dolor sit amet.</p>
+                    </label>
+                </li>
+                <li class="bg-gray-100 px-5 py-4 text-teal-700 rounded-lg mb-3 has-[:checked]:ring-1 has-[:checked]:ring-teal-700 transition-all duration-500">
+                    <label class="flex gap-3 cursor-pointer">
+                        <p class="">Lorem ipsum dolor sit amet.</p>
+                    </label>
+                </li>
+                <li class="bg-gray-100 px-5 py-4 text-teal-700 rounded-lg mb-3 has-[:checked]:ring-1 has-[:checked]:ring-teal-700 transition-all duration-500">
+                    <label class="flex gap-3 cursor-pointer">
+                        <p class="">Lorem ipsum dolor sit amet.</p>
+                    </label>
+                </li>
+            </ul>
+            <div class="my-10"></div>
+            <h3 class="text-base md:text-lg font-semibold mb-2">Incorrects</h3>
+            <ul class="">
+                <li class="bg-gray-100 px-5 py-4 text-red-700 rounded-lg mb-3 has-[:checked]:ring-1 has-[:checked]:ring-teal-700 transition-all duration-500">
+                    <label class="flex gap-3 cursor-pointer">
+                        <p class="">Lorem ipsum dolor sit amet.</p>
+                    </label>
+                </li>
+                <li class="bg-gray-100 px-5 py-4 text-red-700 rounded-lg mb-3 has-[:checked]:ring-1 has-[:checked]:ring-teal-700 transition-all duration-500">
+                    <label class="flex gap-3 cursor-pointer">
+                        <p class="">Lorem ipsum dolor sit amet.</p>
+                    </label>
+                </li>
+            </ul>
+            <div class="divider"></div>
+            <div class="flex justify-end gap-x-1">
+                <button class="btn btn-accent">Retry Quizes</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
