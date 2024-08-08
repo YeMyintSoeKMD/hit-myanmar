@@ -125,7 +125,7 @@ const router = createRouter({
       path: '/quiz',
       name: 'quiz',
       component: Quiz
-    }
+    },
   ]
 })
 

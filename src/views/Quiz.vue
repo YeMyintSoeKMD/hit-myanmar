@@ -1,6 +1,5 @@
 <template>
     <div class="container mx-auto px-8 2xl:px-40 pt-14">
-        <!-- first section -->
         <div v-if="!quizComplete" class="px-40">
             <div class="flex items-center">
                 <svg class="w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" id="Cross">
@@ -14,35 +13,39 @@
                 </svg>
                 <progress class="progress progress-success h-4 ms-5" :value="progress" max="100"></progress>
             </div>
-
             <div class="mt-40">
                 <div class="w-8/12 mx-auto">
                     <h1 class="mb-8 font-bold text-lg">{{ currentQuestion.text }}</h1>
                     <div class="flex flex-col gap-y-3">
-                        <button
-                            :class="['border border-2 border-b-4 rounded-xl py-3 px-3 flex items-center gap-x-3', selectedOption == index ? 'bg-stone-100 border-blue-400 text-blue-500' : 'border-stone-300', showContinue ? 'cursor-auto' : 'hover:bg-stone-100']"
+                        <button :class="['border border-2 border-b-4 rounded-xl py-3 px-3 flex items-center gap-x-3',
+                            selectedOption === index ?
+                                (isCorrect !== null ?
+                                    (isCorrect ? 'bg-green-100 border-green-600 text-green-600' : 'bg-red-100 border-red-600 text-red-600') :
+                                    'bg-stone-100 border-blue-400 text-blue-500') :
+                                'border-stone-300', showContinue ? 'cursor-auto' : 'hover:bg-stone-100']"
                             v-for="(option, index) in currentQuestion.options" :key="index"
                             @click="selectOption(index)">
+                            <span :class="['border border-2 px-2 rounded-md',
+                                selectedOption === index ?
+                                    (isCorrect !== null ?
+                                        (isCorrect ? 'border-green-400 font-semibold' : 'border-red-400 font-semibold') :
+                                        'border-blue-400 font-semibold') :
+                                    'border-stone-300']">{{ index + 1 }}</span>
                             <span
-                                :class="['border border-2 border-stone-300 px-2 rounded-md', selectedOption == index ? 'border-blue-400 font-semibold' : '']">{{
-                                    index + 1 }}</span>
-                            <span :class="[selectedOption == index ? 'font-semibold' : '']">{{ option }}</span>
+                                :class="[selectedOption === index ? (isCorrect !== null ? (isCorrect ? 'font-semibold text-green-500' : 'font-semibold text-red-500') : 'font-semibold') : '']">{{
+                                    option }}</span>
                         </button>
-
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- second section -->
+        <!-- Complete Page  -->
         <div v-if="quizComplete" class="mx-auto w-80 pt-24">
             <img src="/images/celebrate.gif" class="w-full mb-5" />
             <h1 class="text-green-600 font-bold text-3xl text-center">Committed!</h1>
             <p class="text-center mt-5 text-stone-800">Lorem ipsum dolor sit amet hee hee.</p>
         </div>
-
     </div>
-
     <div class="h-0.5 bg-stone-200 mt-64"></div>
     <div class="container mx-auto px-96 flex items-center justify-between mt-8">
         <div>
@@ -58,7 +61,6 @@
                 </svg>
                 <h2 class="font-bold text-xl text-green-600">Nice Job!</h2>
             </div>
-
             <div class="flex items-center gap-x-2" :class="isCorrect !== null && !isCorrect ? '' : 'hidden'">
                 <svg class="w-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="False">
                     <g transform="rotate(45 670.773 1695.329)" fill="#000000" class="color000000 svgShape">
@@ -76,7 +78,6 @@
                 </div>
             </div>
         </div>
-
         <div>
             <button v-if="!quizComplete"
                 :class="['uppercase px-10 py-3 rounded-xl', selectedOption !== null ? 'bg-green-600 text-white' : 'bg-stone-300 text-stone-400', showContinue ? 'hidden' : '']"
@@ -92,10 +93,16 @@
 
 <script setup>
 import { ref, computed } from "vue";
+
 const questions = ref([
     {
         text: 'What does HTML stand for?',
-        options: ['Hyper Text Makeup Language', 'Hyper Text Markup Language', 'Home Tool Markup Language', 'Hyperlink and Text Markup Language'],
+        options: [
+            'Hyper Text Makeup Language',
+            'Hyper Text Markup Language',
+            'Home Tool Markup Language',
+            'Hyperlink and Text Markup Language'
+        ],
         correctAnswer: 'Hyper Text Markup Language'
     },
     {
@@ -115,7 +122,6 @@ const answeredQuestions = ref(0);
 const currentQuestion = computed(() => questions.value[currentQuestionIndex.value]);
 const progress = computed(() => (answeredQuestions.value / questions.value.length) * 100);
 
-
 function selectOption(index) {
     if (!showContinue.value) { // Prevent reselecting after checking the answer
         selectedOption.value = index;
@@ -131,7 +137,6 @@ function checkAnswer() {
     }
 }
 
-
 function nextQuestion() {
     selectedOption.value = null;
     isCorrect.value = null;
@@ -144,5 +149,3 @@ function nextQuestion() {
     }
 }
 </script>
-
-<style lang="scss" scoped></style>
