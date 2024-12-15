@@ -19,6 +19,9 @@ import Gallery from '@/views/Gallery.vue'
 import StudentPortfolio from '@/views/StudentPortfolio.vue'
 import Books from '@/views/Books.vue'
 import Quiz from '@/views/Quiz.vue'
+import Mentorship from "@/views/mentorship.vue";
+import Application from "@/views/applicationForm.vue"
+import ApplicationForm from "@/views/applicationForm.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -52,6 +55,16 @@ const router = createRouter({
       path: '/payment',
       name: 'payment',
       component: Payment
+    },
+    {
+      path: '/mentorship',
+      name: 'mentorship',
+      component: Mentorship
+    },
+    {
+      path: '/application-form',
+      name: 'applicationForm',
+      component: ApplicationForm
     },
     {
       path: '/coursestream',
