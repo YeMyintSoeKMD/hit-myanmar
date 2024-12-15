@@ -3,13 +3,13 @@
     <div class="container mx-auto px-8 2xl:px-40 pt-32">
 
       <!--      card section-->
-      <section class="w-full h-auto space-y-20">
+      <section class="w-full h-auto space-y-5 lg:space-y-20">
 <!--        title and types-->
         <div>
           <h1 class="text-2xl font-semibold">Select a service</h1>
 
           <!--        consultation types-->
-          <div class="mt-4 sm:flex justify-center hidden">
+          <div class="mt-4 sm:flex justify-center">
             <div class="flex flex-wrap gap-2">
               <a href="" class="text-sm border border-info bg-info text-white py-1 px-3 rounded-lg">All Courses</a>
               <a href="" class="text-sm border border-gray-300 text-gray-400 py-1 px-3 rounded-lg">UI/UX</a>
@@ -37,10 +37,10 @@
         </div>
 
 <!--          available time on this week-->
-        <div>
-          <div class="flex justify-between pt-10">
+        <div class="space-y-5">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
             <h1 class="text-xl font-medium">Available Time on this Week</h1>
-            <div class="mt-4 sm:flex gap-2 justify-end hidden">
+            <div class=" sm:flex gap-2 justify-end ">
               <select class="select select-bordered select-sm w-full sm:w-auto my-1">
                 <option disabled="" selected="">Today</option>
                 <option>Lorem ipsum dolor sit amet.</option>
