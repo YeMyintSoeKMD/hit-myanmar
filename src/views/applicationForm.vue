@@ -3,7 +3,7 @@
     <div class="container mx-auto px-8 2xl:px-40 pt-32">
 
       <!--      card section-->
-      <section class="w-full h-auto space-y-5 lg:space-y-20">
+      <section class="w-full h-auto space-y-10 lg:space-y-20">
 <!--        title and types-->
         <div>
           <h1 class="text-2xl font-semibold">Select a service</h1>

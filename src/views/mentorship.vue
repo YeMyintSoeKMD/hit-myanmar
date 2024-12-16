@@ -4,7 +4,7 @@
 <!--      hero section-->
       <section class="grid lg:grid-cols-2 flex items-center">
 <!--        hero content part-->
-        <div class="ps-24 md:ps-0 xl:pe-24 lg:pe-5 lg:m-0 lg:mt-12">
+        <div class="ps-0 lg:ps-24 xl:pe-24 lg:pe-5 lg:m-0 lg:mt-12">
           <h1 class=" xl:text-5xl lg:text-4xl md:text-5xl sm:text-4xl text-5xl font-semibold tracking-widest leading-normal">Success <span class="text-info">begins</span> with the right <span class="text-orange-400">mentor</span></h1>
           <p class="mt-4 lg:mt-8 leading-relaxed xl:text-base lg:text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, nam,
             debitis quo sed neque eligendi hic, omnis optio est qui aut fugit quam. Eius voluptatum, minus
@@ -26,10 +26,10 @@
 
 <!--        image part-->
         <div class="grid grid-cols-2 gap-5 lg:gap-2 w-full h-screen md:h-auto lg:h-auto lg:w-4/5 ps-0 py-20 md:pt-10 lg:py-0 order-last ">
-          <div class="h-80 md:h-96 rounded-xl md:-translate-y0 overflow-hidden">
+          <div class="h-80 md:h-96 lg:h-80 rounded-xl md:-translate-y0 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80" alt="" class="w-full h-full object-cover">
           </div>
-          <div class="h-80 md:h-96 translate-y-10 md:-translate-y-0 lg:translate-y-10 rounded-xl overflow-hidden">
+          <div class="h-80 md:h-96 lg:h-80 translate-y-10 md:-translate-y-0 lg:translate-y-10 rounded-xl overflow-hidden">
             <img src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80" alt="" class="w-full h-full object-cover">
           </div>
           <div class="h-72 md:h-96 lg:h-40 translate-x-10 md:translate-x-0 lg:translate-x-10 md:-translate-y-0 rounded-xl overflow-hidden">
@@ -210,7 +210,7 @@
 <!--        reow in cards-->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
 
-            <div class="flex flex-col lg:flex-row gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
+            <div class="flex flex-col gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
               <!--              img part-->
               <div class="flex items-center gap-x-3">
                 <div class="w-10 h-10 overflow-hidden rounded-full lg:rounded-full">
@@ -223,7 +223,7 @@
 
             </div>
 
-            <div class="flex flex-col lg:flex-row gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
+            <div class="flex flex-col gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
               <!--              img part-->
               <div class="flex items-center gap-x-3">
                 <div class="w-10 h-10 overflow-hidden rounded-full lg:rounded-full">
@@ -237,7 +237,7 @@
 
             </div>
 
-            <div class="flex flex-col lg:flex-row gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
+            <div class="flex flex-col gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
               <!--              img part-->
               <div class="flex items-center gap-x-3">
                 <div class="w-10 h-10 overflow-hidden rounded-full lg:rounded-full">
@@ -251,7 +251,7 @@
 
             </div>
 
-            <div class="flex flex-col lg:flex-row gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
+            <div class="flex flex-col gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
               <!--              img part-->
               <div class="flex items-center gap-x-3">
                 <div class="w-10 h-10 overflow-hidden rounded-full lg:rounded-full">
