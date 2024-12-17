@@ -4,7 +4,7 @@
 <!--      hero section-->
       <section class="grid lg:grid-cols-2 flex items-center">
 <!--        hero content part-->
-        <div class="ps-0 lg:ps-24 xl:pe-24 lg:pe-5 lg:m-0 lg:mt-12">
+        <div class=" xl:pe-24 lg:pe-5 lg:m-0 lg:mt-12">
           <h1 class=" xl:text-5xl lg:text-4xl md:text-5xl sm:text-4xl text-5xl font-semibold tracking-widest leading-normal">Success <span class="text-info">begins</span> with the right <span class="text-orange-400">mentor</span></h1>
           <p class="mt-4 lg:mt-8 leading-relaxed xl:text-base lg:text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, nam,
             debitis quo sed neque eligendi hic, omnis optio est qui aut fugit quam. Eius voluptatum, minus
@@ -132,8 +132,8 @@
       </section>
 
 <!--      reviews section-->
-      <section class="w-full h-auto pt-32">
-        <h1 class="text-4xl font-semibold mb-10">Reviews</h1>
+<!--      <section class="w-full h-auto pt-32">-->
+<!--        <h1 class="text-4xl font-semibold mb-10">Reviews</h1>-->
 
         <!--        reviewers-->
 <!--        reviews show in carousel-->
@@ -206,67 +206,197 @@
 <!--          <a href="#item4" class="btn btn-xs">4</a>-->
 <!--        </div>-->
 
-<!--        reviews-->
-<!--        reow in cards-->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+<!--      </section>-->
 
-            <div class="flex flex-col gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
-              <!--              img part-->
-              <div class="flex items-center gap-x-3">
-                <div class="w-10 h-10 overflow-hidden rounded-full lg:rounded-full">
-                  <img src="/images/yms.jpg" alt="" class="w-full h-full object-cover">
-                </div>
-                <p class="font-bold text-lg">Allen Hein</p>
-              </div>
-              <!--              review content part-->
-              <p class="h-36 text-gray-500 font-medium tracking-wide overflow-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem consequatur est ex, fugit illo itaque iusto labore laborum libero, minus mollitia, non quia quibusdam quis sed suscipit temporibus vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque laboriosam minus quidem, reiciendis tempore tenetur voluptas. Beatae delectus eius error est modi perspiciatis, provident? At ipsa ipsam quas tempore veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem earum eum id molestias omnis quasi similique voluptates? Aliquam corporis fugit id iusto maiores qui repellendus ullam vel veritatis voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto assumenda, autem blanditiis consequatur consequuntur corporis doloribus eveniet, ex hic iusto natus perspiciatis quo, recusandae repudiandae sed sit sunt tenetur.</p>
-
-            </div>
-
-            <div class="flex flex-col gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
-              <!--              img part-->
-              <div class="flex items-center gap-x-3">
-                <div class="w-10 h-10 overflow-hidden rounded-full lg:rounded-full">
-                  <img src="/images/student.jpg" alt="" class="w-full h-full object-cover">
-                </div>
-                <p class="font-bold text-lg">Allen Hein 2</p>
-              </div>
-              <!--              review content part-->
-              <p class="h-36 text-gray-500 font-medium tracking-wide overflow-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem consequatur est ex, fugit illo itaque iusto labore laborum libero, minus mollitia, non quia quibusdam quis sed suscipit temporibus vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus exercitationem magnam mollitia natus, quae quibusdam rerum. Cum deleniti magnam omnis pariatur totam. Ab amet aut dolore magni nemo nulla quae.</p>
-
-
-            </div>
-
-            <div class="flex flex-col gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
-              <!--              img part-->
-              <div class="flex items-center gap-x-3">
-                <div class="w-10 h-10 overflow-hidden rounded-full lg:rounded-full">
-                  <img src="/images/yms.jpg" alt="" class="w-full h-full object-cover">
-                </div>
-                <p class="font-bold text-lg">Allen Hein 3</p>
-              </div>
-              <!--              review content part-->
-              <p class="h-36 text-gray-500 font-medium tracking-wide overflow-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem consequatur est ex, fugit illo itaque iusto labore laborum libero, minus mollitia, non quia quibusdam quis sed suscipit temporibus vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus exercitationem magnam mollitia natus, quae quibusdam rerum. Cum deleniti magnam omnis pariatur totam. Ab amet aut dolore magni nemo nulla quae.</p>
-
-
-            </div>
-
-            <div class="flex flex-col gap-x-20 gap-y-5 w-full h-full p-4 border border-gray-300 rounded-xl">
-              <!--              img part-->
-              <div class="flex items-center gap-x-3">
-                <div class="w-10 h-10 overflow-hidden rounded-full lg:rounded-full">
-                  <img src="/images/student.jpg" alt="" class="w-full h-full object-cover">
-                </div>
-                <p class="font-bold text-lg">Allen Hein 4</p>
-              </div>
-              <!--              review content part-->
-              <p class="h-36 text-gray-500 font-medium tracking-wide overflow-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem consequatur est ex, fugit illo itaque iusto labore laborum libero, minus mollitia, non quia quibusdam quis sed suscipit temporibus vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus exercitationem magnam mollitia natus, quae quibusdam rerum. Cum deleniti magnam omnis pariatur totam. Ab amet aut dolore magni nemo nulla quae.</p>
-
-
-            </div>
-
+<!--      review section-->
+      <div class="relative pt-12 pb-24 md:pt-24 text-center after:absolute after:inset-x-0 after:-bottom-8 lg:after:-bottom-16 after:pointer-events-none after:z-10 after:w-full after:h-[330px] after:bg-gradient-to-t after:from-white after:via-white/90 ">
+        <!-- Title -->
+        <div class="w-full text-start mb-10">
+          <h2 class="text-2xl font-semibold lg:text-3xl lg:leading-tight">Review</h2>
         </div>
-      </section>
+        <!-- End Title -->
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6">
+          <!-- Col -->
+          <div class="space-y-4 xl:space-y-6">
+            <!-- Card -->
+            <div class="flex flex-col bg-white border border-gray-200 rounded-xl ">
+              <div class="p-4 md:p-6">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-x-3 mb-5">
+                    <img class="inline-block size-9 rounded-full" src="/images/yms.jpg" alt="Vosidiy Muslimbek">
+                    <div class="grow">
+                      <p class="font-semibold text-gray-800 ">Ye Myint Soe</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-start leading-7 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem beatae, deserunt distinctio ex
+                </p>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="flex flex-col bg-white border border-gray-200 rounded-xl ">
+              <div class="p-4 md:p-6">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-x-3 mb-5">
+                    <img class="inline-block size-9 rounded-full" src="/images/yms.jpg" alt="Vosidiy Muslimbek">
+                    <div class="grow">
+                      <p class="font-semibold text-gray-800 ">Ye Myint Soe</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-start leading-7 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem beatae, deserunt distinctio ex Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nostrum perferendis ratione? Aut dolorum minus molestiae? Asperiores corporis cupiditate enim et explicabo facere ipsa neque perferendis. Alias asperiores atque officia.
+                </p>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="flex flex-col bg-white border border-gray-200 rounded-xl ">
+              <div class="p-4 md:p-6">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-x-3 mb-5">
+                    <img class="inline-block size-9 rounded-full" src="/images/yms.jpg" alt="Vosidiy Muslimbek">
+                    <div class="grow">
+                      <p class="font-semibold text-gray-800 ">Ye Myint Soe</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-start leading-7 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem beatae, deserunt distinctio ex
+                </p>
+              </div>
+            </div>
+            <!-- End Card -->
+
+          </div>
+          <!-- End Col -->
+
+          <!-- Col -->
+          <div class="space-y-4 xl:space-y-6">
+            <!-- Card -->
+            <div class="flex flex-col bg-white border border-gray-200 rounded-xl ">
+              <div class="p-4 md:p-6">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-x-3 mb-5">
+                    <img class="inline-block size-9 rounded-full" src="/images/yms.jpg" alt="Vosidiy Muslimbek">
+                    <div class="grow">
+                      <p class="font-semibold text-gray-800 ">Ye Myint Soe</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-start leading-7 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem beatae, deserunt distinctio ex
+                </p>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="flex flex-col bg-white border border-gray-200 rounded-xl ">
+              <div class="p-4 md:p-6">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-x-3 mb-5">
+                    <img class="inline-block size-9 rounded-full" src="/images/yms.jpg" alt="Vosidiy Muslimbek">
+                    <div class="grow">
+                      <p class="font-semibold text-gray-800 ">Ye Myint Soe</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-start leading-7 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem beatae, deserunt distinctio ex
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem beatae, deserunt distinctio ex
+                </p>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="flex flex-col bg-white border border-gray-200 rounded-xl ">
+              <div class="p-4 md:p-6">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-x-3 mb-5">
+                    <img class="inline-block size-9 rounded-full" src="/images/yms.jpg" alt="Vosidiy Muslimbek">
+                    <div class="grow">
+                      <p class="font-semibold text-gray-800 ">Ye Myint Soe</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-start leading-7 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem beatae, deserunt distinctio ex Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam dolores, doloribus eum ex hic illum, impedit laboriosam laudantium minus nesciunt nisi obcaecati odio quis ratione soluta velit vero vitae?
+                </p>
+              </div>
+            </div>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+
+          <!-- Col -->
+          <div class="space-y-4 xl:space-y-6">
+            <!-- Card -->
+            <div class="flex flex-col bg-white border border-gray-200 rounded-xl ">
+              <div class="p-4 md:p-6">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-x-3 mb-5">
+                    <img class="inline-block size-9 rounded-full" src="/images/yms.jpg" alt="Vosidiy Muslimbek">
+                    <div class="grow">
+                      <p class="font-semibold text-gray-800 ">Ye Myint Soe</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-start leading-7 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem beatae, deserunt distinctio ex Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, fuga reprehenderit? Dolores ducimus error iusto laudantium minima, nobis perferendis quibusdam quidem similique totam. Consequatur dicta earum eligendi iste minus, sequi!
+                </p>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="flex flex-col bg-white border border-gray-200 rounded-xl ">
+              <div class="p-4 md:p-6">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-x-3 mb-5">
+                    <img class="inline-block size-9 rounded-full" src="/images/yms.jpg" alt="Vosidiy Muslimbek">
+                    <div class="grow">
+                      <p class="font-semibold text-gray-800 ">Ye Myint Soe</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-start leading-7 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem beatae, deserunt distinctio ex
+                </p>
+              </div>
+            </div>
+            <!-- End Card -->
+
+            <!-- Card -->
+            <div class="flex flex-col bg-white border border-gray-200 rounded-xl ">
+              <div class="p-4 md:p-6">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-x-3 mb-5">
+                    <img class="inline-block size-9 rounded-full" src="/images/yms.jpg" alt="Vosidiy Muslimbek">
+                    <div class="grow">
+                      <p class="font-semibold text-gray-800 ">Ye Myint Soe</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-start leading-7 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem beatae, deserunt distinctio ex Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, adipisci asperiores consectetur corporis doloremque hic id iure iusto maxime nam nostrum odit quia quo quod reprehenderit sed tempore ullam voluptate.
+                </p>
+              </div>
+            </div>
+            <!-- End Card -->
+
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+      </div>
 
     </div>
   </div>
